@@ -1,162 +1,117 @@
-# Réjean McCormick
+# Réjean McCormick · socio-technical architect
 
-Socio-technical architect exploring how AI, civic platforms, and collective intelligence can be woven into concrete systems: donation rails, learning infrastructures, and governance tools that are transparent, accountable, and actually usable.
+I design and ship civic utilities: shared infrastructure that helps people learn, coordinate, and govern together.
 
-I design and prototype “civic utilities” that turn knowledge into a public resource and translate agreement into action.
-
----
-
-## Table of Contents
-
-- [Areas of Focus](#areas-of-focus)
-- [Books](#books)
-  - [Konvergence cycle](#konvergence-cycle)
-  - [King Klown Kronicles](#king-klown-kronicles)
-  - [The Book of kOA](#the-book-of-koa)
-- [Academic & Policy Work](#academic--policy-work)
-- [Civic & Technical Projects](#civic--technical-projects)
-- [This GitHub Space](#this-github-space)
-- [Links & Profiles](#links--profiles)
+Core projects:
+- **KOA** – a modular civic ecosystem
+- **Konnaxion** – knowledge and civic platform
+- **Orgo** – nervous system for organisations
+- **Movement & narrative** – political program and story engine around King Klown
 
 ---
 
-## Areas of Focus
+## KOA: the ecosystem
 
-- Collective intelligence & open coordination  
-- Civic platforms and “civic utilities” (KOA, Konnaxion)  
-- Zero-skim philanthropy and cooperative rails for giving  
-- AI applied to complex, high-stakes systems (governance, finance, infrastructure)  
-- Sustainable infrastructure (modular compute, clean energy, local stewardship)  
+**KOA** (Konnaxion + Orgo + narrative layer) is a public-good ecosystem that links:
 
----
+- people  
+- knowledge and methods  
+- projects and institutions  
 
-## Books
+…across four main spaces:
 
-### Konvergence cycle
+- **KonnectED** – learning, micro-credentials, re-use of global best practice  
+- **keenKonnect** – open R&D, builds, and deployments  
+- **Ethikos / Smart Vote** – structured debate, consultations, and weighted readings of results  
+- **Kreative** – culture, archives, and patronage  
 
-Fiction that doubles as systems thinking.
+A shared spine handles identity, domain-specific merit, ethics-aware weighting (Ekoh), and auditable decision flows (Smart Vote). The same mechanics power education, collaboration, governance, and culture.
 
-- **Konvergence: Échoïsme**  
-  (English edition – Amazon)  
-  `https://www.amazon.ca/Konvergence-%C3%89cho%C3%AFsme-R%C3%A9jean-McCormick-ebook/dp/B0F1CBRP1L`  
-
-- **Konvergence: version franco**  
-  (French edition – Amazon)  
-  `https://www.amazon.ca/-/fr/R%C3%A9jean-McCormick-ebook/dp/B0F1DNQSTD`  
-
-At the core of the story is a character who shares my name: a man marked by loss and an obsession with the infinite structure of π. His search for meaning pulls him into emerging architectures of collective intelligence and alternative civic systems. The books are written as narrative but seeded with design patterns for governance, coordination, and ethical action. :contentReference[oaicite:0]{index=0}  
+Public hub: **https://okido.wiki**  
+Knowledge platform hub: **https://kingklown.wiki**
 
 ---
 
-### King Klown Kronicles
+## Konnaxion · knowledge & civic platform
 
-- **King Klown Kronicles: The Hidden Manifesto**  
-  (Amazon – multiple regions)  
-  Example Kindle link:  
-  `https://www.amazon.ca/-/fr/R%C3%A9jean-McCormick-ebook/dp/B0DZ76L1N3`  
+**Konnaxion** is the software implementation of KOA’s “knowledge platform”:
 
-In a city collapsing under neglect and indifference, one father’s unbearable loss becomes the spark for an improbable transformation. A broken system claims his son’s life, forcing him to face the apathy, decay, and quiet violence built into our institutions. The book is both a story and a manifesto—an exploration of what we tolerate, what we normalize, and how we might design something better. :contentReference[oaicite:1]{index=1}  
+- Connects learning, R&D, consultations, and cultural projects into one workspace  
+- Links out to existing OER catalogs, maker libraries, and civic tools instead of duplicating them  
+- Provides multiple “readings” of any consultation or decision (raw crowd, expertise-weighted, stakeholder-specific)  
+- Publishes a limited, curated library of validated debates, blueprints, and learning sequences for fast reuse  
 
----
-
-### The Book of kOA
-
-- **The Book of kOA: A Modular Civic Platform for Collective Intelligence and Ethical Action**  
-  (PhilArchive entry, with citation details)  
-  `https://philarchive.org/rec/MCCTBO-17`  
-
-The Book of kOA lays out a manifesto and a systems design for a global, merit-based civic platform—**Konnaxion**—that turns knowledge into a public utility and translates agreement into action. It proposes a modular architecture built around four interoperable components: KonnectED (open education), keenKonnect (collaborative development), Ethikos (merit-weighted deliberation and voting), and Kreative (cultural commons), tied together by a merit and legitimacy backbone called EkoH. :contentReference[oaicite:2]{index=2}  
-
-The design is grounded in principles such as:
-
-- Radical lucidity  
-- Transparency in governance / privacy of person  
-- Inclusive social mobility  
-- Ecological responsibility  
-- Cooperation before competition  
-
-It sketches how these ideas can be piloted in education, justice and rehabilitation, “Kristal Farms” open-knowledge infrastructures, and hybrid governance experiments.
+Links:
+- Code: **https://github.com/Rejean-McCormick/Konnaxion**  
+- Public wiki / docs: **https://kingklown.wiki**  
+- Narrative / UX overview: **https://kingklown.com**
 
 ---
 
-## Academic & Policy Work
+## Orgo · nervous system for organisations
 
-Some of my work appears on PhilArchive and PhilPapers, often at the intersection of social philosophy, applied ethics, and institutional design. :contentReference[oaicite:3]{index=3}  
+**Orgo** is a multi-tenant nervous system for organisations:
 
-Key piece:
+- Ingests signals (emails, forms, APIs, imports)  
+- Normalises them into **Cases** and **Tasks** under a shared schema  
+- Routes them using labels and roles, with clear ownership  
+- Tracks execution, escalations, and periodic reviews  
+- Feeds an **Insights** layer so leaders can see bottlenecks, risks, and recurring patterns  
 
-- **Zero-Skim Philanthropy Blueprint**  
-  PhilArchive:  
-  `https://philarchive.org/rec/MCCZPB`  
+Target domains: administrations, schools, hospitals, NGOs, co-ops, and complex ops teams that want one backbone instead of fragmented ticketing tools.
 
-This policy brief argues that Canada’s giving system leaks value through platform skims, duplicated back-office costs, and leadership wage capture. It proposes a **utility-grade cooperative banking donation rail** operated by a credit union and its affiliated foundation, with:
-
-- 0% platform take-rate  
-- Thematic pooled funds  
-- Member allocation via approval voting with a quorum  
-- A ≤10% administrative-cost covenant at the grant level  
-- Strict governance constraints (pay caps, conflict-of-interest rules, secrecy of the ballot, public dashboards) :contentReference[oaicite:4]{index=4}  
-
-The goal: more net-to-program dollars, stronger democratic legitimacy, and a replicable model that other cooperative banks can adapt.
+Links:
+- Code: **https://github.com/Rejean-McCormick/Orgo**  
+- Wiki: **https://github.com/Rejean-McCormick/Orgo/wiki**
 
 ---
 
-## Civic & Technical Projects
+## Movement · program and deployments
 
-### Konnaxion (code)
+The same architecture supports a concrete public program:
 
-Konnaxion is my primary socio-technical project on GitHub: a prototype civic platform intended to connect humans, structure collective action, and support cooperative models such as zero-skim donation rails.
+- Education that reuses global best practices instead of rebuilding each curriculum from scratch  
+- Health and justice systems supported by structured information flows and transparent prioritisation  
+- Public administration running on Orgo-style backbones to reduce friction and blind spots  
+- Early discovery of “quiet” talent through contributions and portable credentials  
 
-- **Konnaxion repository**  
-  `https://github.com/Rejean-McCormick/Konnaxion`  
-
-The GitHub implementation is a work in progress that explores:
-
-- Service architectures that reflect the kOA modular design  
-- Data and identity layers that respect privacy while supporting transparency in governance  
-- Interfaces for participation, deliberation, and merit tracking  
-
-Over time, this space will include additional experiments: AI-assisted coordination tools, simulations, and small utilities aligned with the same design principles.
+Program site (Canada focus): **https://kingklown.ca**
 
 ---
 
-## This GitHub Space
+## Narrative layer · King Klown & Surreal
 
-This `Rejean-McCormick` repository is my **public landing page** on GitHub.
+Around the platforms, a narrative engine makes the ideas legible and engaging:
 
-Here you can expect:
+- Fiction cycles (e.g. *King Klown Kronicles*, *Konvergence*)  
+- Podcast / audiobooks and music  
+- Stage work, including in-development pieces like *Le Ninja Arc-en-ciel*  
+- Visual and audio media that re-use the same systems-thinking patterns  
 
-- Links to books, papers, and manifestos  
-- Pointers to live code (like Konnaxion) implementing parts of those designs  
-- Notes, drafts, and experiments that sit between theory and deployment  
-
-If you’re coming from one of the books or papers and want to see where ideas become code, start with the **Konnaxion** repo and related projects listed here.
-
----
-
-## Links & Profiles
-
-- GitHub profile:  
-  `https://github.com/Rejean-McCormick`  
-
-- Konnaxion (code):  
-  `https://github.com/Rejean-McCormick/Konnaxion`  
-
-- PhilPeople profile (publications & updates):  
-  `https://philpeople.org/profiles/rejean-mccormick` :contentReference[oaicite:5]{index=5}  
-
-- PhilArchive entries (open access):  
-  - The Book of kOA: `https://philarchive.org/rec/MCCTBO-17` :contentReference[oaicite:6]{index=6}  
-  - Zero-Skim Philanthropy Blueprint: `https://philarchive.org/rec/MCCZPB` :contentReference[oaicite:7]{index=7}  
-
-- Amazon book pages (examples):  
-  - Konvergence: Échoïsme (EN):  
-    `https://www.amazon.ca/Konvergence-%C3%89cho%C3%AFsme-R%C3%A9jean-McCormick-ebook/dp/B0F1CBRP1L` :contentReference[oaicite:8]{index=8}  
-  - Konvergence: version franco (FR):  
-    `https://www.amazon.ca/-/fr/R%C3%A9jean-McCormick-ebook/dp/B0F1DNQSTD` :contentReference[oaicite:9]{index=9}  
-  - King Klown Kronicles: The Hidden Manifesto:  
-    `https://www.amazon.ca/-/fr/R%C3%A9jean-McCormick-ebook/dp/B0DZ76L1N3` :contentReference[oaicite:10]{index=10}  
+Narrative site: **https://kingklown.com**
 
 ---
 
-If you work on adjacent problems—civic tech, cooperative finance, AI for institutional design—and want to explore alignment or collaboration, the best entry points are the kOA/Konnaxion architecture, the Zero-Skim Blueprint, and the Book of kOA.
+## Repos to check
+
+- **Konnaxion** – civic knowledge platform implementation  
+  → `https://github.com/Rejean-McCormick/Konnaxion`  
+
+- **Orgo** – multi-tenant organisational nervous system  
+  → `https://github.com/Rejean-McCormick/Orgo`  
+
+- **MouvementKoa-Chatbot** – conversational entry point into KOA concepts and program  
+  → `https://github.com/Rejean-McCormick/MouvementKoa-Chatbot`  
+
+- **VotingMachine / Smart Vote prototypes** – experiments on consultations and weighted readings  
+  → `https://github.com/Rejean-McCormick/VotingMachine`  
+
+Additional briefs, decks, and links are indexed at **https://okido.wiki**.
+
+---
+
+## Contact
+
+- Hub: **https://okido.wiki**  
+- Email: **k@kingklown.com**  
+- GitHub: **https://github.com/Rejean-McCormick**
