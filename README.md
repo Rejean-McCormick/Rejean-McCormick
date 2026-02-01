@@ -3,16 +3,16 @@
 I design and ship civic utilities: shared infrastructure that helps people learn, coordinate, and govern together.
 
 Core projects:
-- **KOA** – a modular civic ecosystem
+- **kOA** – a modular civic ecosystem
 - **Konnaxion** – knowledge and civic platform
 - **Orgo** – nervous system for organisations
 - **Movement & narrative** – political program and story engine around King Klown
 
 ---
 
-## KOA: the ecosystem
+## kOA: the ecosystem
 
-**KOA** (Konnaxion + Orgo + narrative layer) is a public-good ecosystem that links:
+**kOA** (Konnaxion + Orgo + narrative layer) is a public-good ecosystem that links:
 
 - people  
 - knowledge and methods  
@@ -34,7 +34,7 @@ Knowledge platform hub: **https://kingklown.wiki**
 
 ## Konnaxion · knowledge & civic platform
 
-**Konnaxion** is the software implementation of KOA’s “knowledge platform”:
+**Konnaxion** is the software implementation of kOA’s “knowledge platform”:
 
 - Connects learning, R&D, consultations, and cultural projects into one workspace  
 - Links out to existing OER catalogs, maker libraries, and civic tools instead of duplicating them  
@@ -99,9 +99,6 @@ Narrative site: **https://kingklown.com**
 
 - **Orgo** – multi-tenant organisational nervous system  
   → `https://github.com/Rejean-McCormick/Orgo`  
-
-- **MouvementKoa-Chatbot** – conversational entry point into KOA concepts and program  
-  → `https://github.com/Rejean-McCormick/MouvementKoa-Chatbot`  
 
 - **VotingMachine / Smart Vote prototypes** – experiments on consultations and weighted readings  
   → `https://github.com/Rejean-McCormick/VotingMachine`  
