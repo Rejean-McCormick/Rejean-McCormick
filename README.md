@@ -192,7 +192,6 @@ That is the problem space I work in.
 - [ORCID](https://orcid.org/0009-0001-2086-854X)
 - [Google Scholar](https://scholar.google.com/citations?user=oVZ3n9kAAAAJ&hl=en)
 - [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
-- [Meta-Wiki](https://meta.wikimedia.org/wiki/User:R%C3%A9jean_McCormick)
 - [Mastodon](https://mastodon.social/@Rejean_McCormick)
 - [Facebook](https://www.facebook.com/profile.php?id=61566663549235)
 
