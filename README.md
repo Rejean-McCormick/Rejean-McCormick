@@ -1,114 +1,211 @@
-# Réjean McCormick · socio-technical architect
+# Réjean McCormick
 
-I design and ship civic utilities: shared infrastructure that helps people learn, coordinate, and govern together.
+**Socio-technical architect**  
+Building **kOA** — a governable digital ecosystem for turning **knowledge into coordinated action**.
 
-Core projects:
-- **kOA** – a modular civic ecosystem
-- **Konnaxion** – knowledge and civic platform
-- **Orgo** – nervous system for organisations
-- **Movement & narrative** – political program and story engine around King Klown
+I work on infrastructure for collective intelligence: systems that help people and institutions **learn, deliberate, decide, execute, and preserve memory** without losing legitimacy, traceability, or operational clarity.
 
----
-
-## kOA: the ecosystem
-
-**kOA** (Konnaxion + Orgo + narrative layer) is a public-good ecosystem that links:
-
-- people  
-- knowledge and methods  
-- projects and institutions  
-
-…across four main spaces:
-
-- **KonnectED** – learning, micro-credentials, re-use of global best practice  
-- **keenKonnect** – open R&D, builds, and deployments  
-- **Ethikos / Smart Vote** – structured debate, consultations, and weighted readings of results  
-- **Kreative** – culture, archives, and patronage  
-
-A shared spine handles identity, domain-specific merit, ethics-aware weighting (Ekoh), and auditable decision flows (Smart Vote). The same mechanics power education, collaboration, governance, and culture.
-
-Public hub: **https://okido.wiki**  
-Knowledge platform hub: **https://kingklown.wiki**
+kOA is not a single app. It is a **Sociotechnical Operating System**: a modular architecture that combines technical systems, governance logic, workflow, and semantic knowledge infrastructure into one coherent runtime.
 
 ---
 
-## Konnaxion · knowledge & civic platform
+## What I’m building
 
-**Konnaxion** is the software implementation of kOA’s “knowledge platform”:
+The central idea behind **kOA** is simple:
 
-- Connects learning, R&D, consultations, and cultural projects into one workspace  
-- Links out to existing OER catalogs, maker libraries, and civic tools instead of duplicating them  
-- Provides multiple “readings” of any consultation or decision (raw crowd, expertise-weighted, stakeholder-specific)  
-- Publishes a limited, curated library of validated debates, blueprints, and learning sequences for fast reuse  
+> societies and organisations do not fail only because they lack information;  
+> they fail because information rarely becomes coordinated, auditable, reusable action.
 
-Links:
-- Code: **https://github.com/Rejean-McCormick/Konnaxion**  
-- Public wiki / docs: **https://kingklown.wiki**  
-- Narrative / UX overview: **https://kingklown.com**
+Most systems stop at one layer:
+- knowledge platforms stop at documentation
+- civic platforms stop at participation
+- workflow systems stop at execution
+- archives preserve outputs but not usable memory
 
----
+**kOA closes the loop**:
 
-## Orgo · nervous system for organisations
+**knowledge → deliberation → decision → execution → institutional memory**
 
-**Orgo** is a multi-tenant nervous system for organisations:
-
-- Ingests signals (emails, forms, APIs, imports)  
-- Normalises them into **Cases** and **Tasks** under a shared schema  
-- Routes them using labels and roles, with clear ownership  
-- Tracks execution, escalations, and periodic reviews  
-- Feeds an **Insights** layer so leaders can see bottlenecks, risks, and recurring patterns  
-
-Target domains: administrations, schools, hospitals, NGOs, co-ops, and complex ops teams that want one backbone instead of fragmented ticketing tools.
-
-Links:
-- Code: **https://github.com/Rejean-McCormick/Orgo**  
-- Wiki: **https://github.com/Rejean-McCormick/Orgo/wiki**
+The goal is to create infrastructure that is:
+- **governable**
+- **modular**
+- **auditable**
+- **offline-capable where needed**
+- **deterministic-first, with AI as a bounded tool rather than hidden authority**
 
 ---
 
-## Movement · program and deployments
+## Architecture
 
-The same architecture supports a concrete public program:
+### **kOA Digital Ecosystem**
+The overall architecture: a **system of systems** designed for resilient knowledge-to-action.
 
-- Education that reuses global best practices instead of rebuilding each curriculum from scratch  
-- Health and justice systems supported by structured information flows and transparent prioritisation  
-- Public administration running on Orgo-style backbones to reduce friction and blind spots  
-- Early discovery of “quiet” talent through contributions and portable credentials  
+kOA is built to connect:
+- people
+- roles and institutions
+- knowledge and evidence
+- deliberation and decision protocols
+- operational execution
+- durable semantic memory
 
-Program site (Canada focus): **https://kingklown.ca**
-
----
-
-## Narrative layer · King Klown & Surreal
-
-Around the platforms, a narrative engine makes the ideas legible and engaging:
-
-- Fiction cycles (e.g. *King Klown Kronicles*, *Konvergence*)  
-- Podcast / audiobooks and music  
-- Stage work, including in-development pieces like *Le Ninja Arc-en-ciel*  
-- Visual and audio media that re-use the same systems-thinking patterns  
-
-Narrative site: **https://kingklown.com**
+It is designed for environments where legitimacy, accountability, and continuity matter: civic ecosystems, public institutions, schools, health systems, NGOs, co-ops, and complex operational teams.
 
 ---
 
-## Repos to check
+### **Konnaxion**
+The **public coordination layer** of the ecosystem.
 
-- **Konnaxion** – civic knowledge platform implementation  
-  → `https://github.com/Rejean-McCormick/Konnaxion`  
+Konnaxion is where learning, research, consultations, and shared civic knowledge come together. It is designed to support:
+- learning pathways and reusable best practices
+- open R&D and collaborative builds
+- structured consultations and debate
+- publication of high-signal knowledge artifacts
+- public-facing coordination across communities and projects
 
-- **Orgo** – multi-tenant organisational nervous system  
-  → `https://github.com/Rejean-McCormick/Orgo`  
+Rather than duplicating every external tool, Konnaxion is built to **orchestrate and integrate** while preserving a curated commons.
 
-- **VotingMachine / Smart Vote prototypes** – experiments on consultations and weighted readings  
-  → `https://github.com/Rejean-McCormick/VotingMachine`  
+---
 
-Additional briefs, decks, and links are indexed at **https://okido.wiki**.
+### **Orgo**
+The **execution backbone**.
+
+Orgo is a multi-tenant organisational nervous system for converting signals into action. It ingests requests, events, and operational inputs, then turns them into structured work with:
+- cases
+- tasks
+- routing
+- ownership
+- escalation
+- review cycles
+- operational memory
+
+The point is not just task management. The point is to give institutions a shared execution grammar so outcomes do not disappear into inboxes, spreadsheets, and fragmented ticketing systems.
+
+---
+
+### **Kristal**
+The **knowledge artifact layer**.
+
+kOA treats knowledge as infrastructure, not content.  
+That means knowledge must be:
+- portable
+- structured
+- versioned
+- provenance-aware
+- queryable
+- reusable
+
+A **Kristal** is the compiled output unit of that approach: a semantic artifact designed to preserve meaning, evidence, and traceability better than ordinary documents can.
+
+---
+
+### **SemantiK**
+The **semantic / multilingual generation layer**.
+
+SemantiK supports structured language generation and semantic workflows across multilingual and knowledge-driven contexts. It helps move from raw information and abstract schemas toward readable, reusable, structured outputs.
+
+---
+
+## Design principles
+
+My work is guided by a few recurring principles:
+
+- **Governability over engagement**  
+  Systems should not optimize only for activity; they should remain understandable, contestable, and accountable.
+
+- **Deterministic-first**  
+  Critical flows should be reproducible and inspectable. AI can assist, but it should not be the only path to correctness.
+
+- **Fail-closed where integrity matters**  
+  If an artifact cannot be validated, the system should refuse to act on it.
+
+- **System of systems, not monolith**  
+  Strong architecture comes from composable modules with explicit seams, not from one platform trying to absorb everything.
+
+- **Institutional memory as a first-class feature**  
+  Decisions, workflows, and knowledge should compound over time instead of resetting every cycle.
+
+- **Public-good orientation**  
+  The aim is not only efficiency, but better collective capacity: better learning, better deliberation, better execution, better continuity.
+
+---
+
+## Selected repositories
+
+### [**kOA_Digital_Ecosystem**](https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem)
+The architectural core of the ecosystem.  
+This repo captures the end-to-end logic for governable knowledge-to-action: structured inputs, semantic artifacts, decision flows, execution pathways, and durable memory.
+
+### [**Konnaxion**](https://github.com/Rejean-McCormick/Konnaxion)
+The civic knowledge and coordination platform.  
+Focused on connecting people, knowledge, projects, consultations, and reusable learning / research pathways.
+
+### [**Orgo**](https://github.com/Rejean-McCormick/Orgo)
+The operational nervous system.  
+Focused on signals, cases, tasks, routing, accountability, escalation, and insight generation for real institutions.
+
+### [**kristal-framework**](https://github.com/Rejean-McCormick/kristal-framework)
+Framework for structured knowledge artifacts.  
+Focused on defining, compiling, validating, versioning, and reusing Kristals as portable semantic infrastructure.
+
+### [**SemantiK_Architect**](https://github.com/Rejean-McCormick/SemantiK_Architect)
+Semantic and multilingual generation toolkit.  
+Focused on knowledge-driven language workflows, structured generation, and semantic expression across domains.
+
+---
+
+## Why this work exists
+
+We are entering a period where institutions face simultaneous pressure from information overload, coordination breakdown, public mistrust, and opaque automation.
+
+The response cannot just be “more content,” “better dashboards,” or “AI everywhere.”
+
+What is needed is **governable infrastructure**:
+- systems that preserve meaning
+- systems that make decisions legible
+- systems that connect deliberation to execution
+- systems that produce reusable memory
+- systems that remain usable even under stress, contestation, or degraded conditions
+
+That is the problem space I work in.
+
+---
+
+## Writing and public profiles
+
+- [initkoa.org](https://initkoa.org)
+- [Amazon author page](https://www.amazon.ca/stores/R%C3%A9jean-McCormick/author/B0G3B7DQWG)
+- [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
+- [Medium](https://medium.com/@boatbuilder610)
+- [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
+- [YouTube playlists](https://www.youtube.com/@KingKlown-XYZ/playlists)
 
 ---
 
 ## Contact
 
-- Hub: **https://okido.wiki**  
-- Email: **k@kingklown.com**  
-- GitHub: **https://github.com/Rejean-McCormick**
+- **Email:** [rejean.mccormick@initkoa.org](mailto:rejean.mccormick@initkoa.org)
+- **GitHub:** [Rejean-McCormick](https://github.com/Rejean-McCormick)
+- **Hub:** [initkoa.org](https://initkoa.org)
+
+### Profiles & reference anchors
+- [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
+- [ORCID](https://orcid.org/0009-0001-2086-854X)
+- [Google Scholar](https://scholar.google.com/citations?user=oVZ3n9kAAAAJ&hl=en)
+- [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
+- [Meta-Wiki](https://meta.wikimedia.org/wiki/User:R%C3%A9jean_McCormick)
+- [Mastodon](https://mastodon.social/@Rejean_McCormick)
+- [Facebook](https://www.facebook.com/profile.php?id=61566663549235)
+
+### Writing & publishing
+- [Medium](https://medium.com/@boatbuilder610)
+- [Amazon author page](https://www.amazon.ca/stores/author/B0G3B7DQWG?ingress=0&visitId=2c136ee2-ccf3-47b2-a4c9-c04125871944)
+
+### Audio
+- [Spotify](https://open.spotify.com/show/2hMamhJENVfWsULSuUVEG4)
+- [SoundCloud](https://soundcloud.com/rejean-mccormick)
+
+### Additional channels
+- [Instagram](https://www.instagram.com/kingklown.xyz/)
+- [X](https://x.com/KingKlownXYZ)
+- [TikTok](https://www.tiktok.com/@kingklown.xyz)
+- [Hugging Face](https://huggingface.co/KingKlown)
