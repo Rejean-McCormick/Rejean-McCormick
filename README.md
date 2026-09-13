@@ -1,247 +1,313 @@
 # Réjean McCormick
 
-**Socio-technical architect**
-Building **kOA** — governable civic infrastructure for turning **knowledge into coordinated action**.
+**Socio-technical architect building kOA — a governable digital ecosystem for turning knowledge into coordinated action.**
 
-I work on infrastructure for collective intelligence: systems that help people and institutions **learn, deliberate, decide, execute, and preserve memory** without losing legitimacy, traceability, or operational clarity.
+I design infrastructure for collective intelligence: systems that help people and institutions **learn, deliberate, decide, execute, and preserve memory** without losing legitimacy, traceability, or operational clarity.
 
-kOA is not a single app. It is a **Sociotechnical Operating System**: a modular architecture that combines technical systems, governance logic, workflow, and semantic knowledge infrastructure into one coherent operating layer.
+> **kOA is not a single app.**  
+> It is an ecosystem built around **kOA-Linux**, with three principal applications — **Konnaxion, Orgo, and UCKK** — plus semantic, multilingual, knowledge, and automation capabilities that can plug into the same architecture.
 
 ---
 
-## What I’m building
+## Start here
 
-The central idea behind **kOA** is simple:
+| Layer | Repository | Purpose |
+|---|---|---|
+| **Operating environment** | [**kOA-Linux**](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | Native operating environment that integrates the kOA applications |
+| **Core app** | [**Konnaxion**](https://github.com/Rejean-McCormick/Konnaxion) | Public coordination, shared knowledge, learning, research, consultation |
+| **Core app** | [**Orgo**](https://github.com/Rejean-McCormick/Orgo) | Operational execution, routing, ownership, escalation, organisational memory |
+| **Core app** | [**UCKK**](https://github.com/Rejean-McCormick/UCKK) | Distribution platform and core application |
+| **Architecture** | [**kOA Digital Ecosystem**](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | Alignment, interoperability, contracts, and system-of-systems architecture |
 
-> societies and organisations do not fail only because they lack information;
-> they fail because information rarely becomes coordinated, auditable, reusable action.
+---
 
-Most systems stop at one layer:
+## kOA at a glance
 
-* knowledge platforms stop at documentation
-* civic platforms stop at participation
-* workflow systems stop at execution
-* archives preserve outputs but not usable memory
+```mermaid
+flowchart TB
+    ECO["kOA Digital Ecosystem<br/>architecture · alignment · interoperability"]
+    OS["kOA-Linux<br/>native operating environment"]
 
-**kOA closes the loop**:
+    K["Konnaxion<br/>coordination"]
+    O["Orgo<br/>execution"]
+    U["UCKK<br/>distribution"]
+
+    S["SemantiK Architect<br/>multilingual"]
+    T["SenTient<br/>semantic capabilities"]
+    KR["Kristal Framework<br/>knowledge infrastructure"]
+    MK["MediKristal<br/>specialized app"]
+    A["Ariane<br/>automated navigation<br/>(private)"]
+
+    ECO --> OS
+    OS --> K
+    OS --> O
+    OS --> U
+
+    S -. enables .-> K
+    S -. enables .-> O
+    S -. enables .-> U
+
+    T -. semantic layer .-> K
+    T -. semantic layer .-> O
+    T -. semantic layer .-> U
+
+    KR -. knowledge layer .-> K
+    KR -. knowledge layer .-> O
+    KR -. knowledge layer .-> U
+
+    MK -. optional app .-> OS
+    A -. proprietary capability .-> OS
+```
+
+The operating loop is:
 
 **knowledge → deliberation → decision → execution → institutional memory**
 
-The goal is to create infrastructure that is:
-
-* **governable**
-* **modular**
-* **auditable**
-* **offline-capable where needed**
-* **policy-scoped**
-* **deterministic-first, with AI as a bounded tool rather than hidden authority**
+The goal is not to build one monolithic platform. The goal is to make the seams between systems **explicit, governable, auditable, and reusable**.
 
 ---
 
-## Architecture
+## Core systems
 
-### **kOA Digital Ecosystem**
+### kOA-Linux
 
-The overall architecture: a **system of systems** designed for resilient knowledge-to-action.
+**kOA-Linux is the native operating environment for the ecosystem.**
 
-kOA connects:
+Its role is to make the main kOA applications feel like parts of one coherent system rather than unrelated tools. It provides the environment in which integration, navigation, identity, workflows, knowledge, and supporting services can come together.
 
-* people
-* roles and institutions
-* knowledge and evidence
-* deliberation and decision protocols
-* operational execution
-* durable semantic memory
+**Repository:** [Rejean-McCormick/kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali)
 
-It is designed for environments where legitimacy, accountability, and continuity matter: civic ecosystems, public institutions, schools, health systems, NGOs, co-ops, and complex operational teams.
+### Konnaxion
 
----
+**Konnaxion is the public coordination layer.**
 
-### **Konnaxion**
+It brings together learning, research, consultations, shared civic knowledge, reusable practices, and public-facing coordination.
 
-The **public coordination layer** of the ecosystem.
+Related repositories:
 
-Konnaxion is where learning, research, consultations, and shared civic knowledge come together. It supports:
+- [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag)
+- [Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds)
+- [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag)
+- [Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager)
+- [Konnaxion-Ashoka-Systems-Change-Dossier](https://github.com/Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier)
 
-* learning pathways and reusable best practices
-* open R&D and collaborative builds
-* structured consultations and debate
-* publication of high-signal knowledge artifacts
-* public-facing coordination across communities and projects
+### Orgo
 
-Rather than duplicating every external tool, Konnaxion is built to **orchestrate and integrate** while preserving a curated commons.
+**Orgo is the execution backbone.**
 
----
+It converts signals and decisions into structured work: cases, tasks, routing, ownership, escalation, review cycles, and operational memory.
 
-### **Orgo**
+Related repositories:
 
-The **execution backbone**.
+- [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds)
+- [LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo)
 
-Orgo is a multi-tenant organisational nervous system for converting signals into action. It ingests requests, events, and operational inputs, then turns them into structured work with:
+### UCKK
 
-* cases
-* tasks
-* routing
-* ownership
-* escalation
-* review cycles
-* operational memory
+**UCKK is a principal application and the ecosystem's current distribution platform.**
 
-The point is not just task management. The point is to give institutions a shared execution grammar so outcomes do not disappear into inboxes, spreadsheets, and fragmented ticketing systems.
+It sits alongside Konnaxion and Orgo as one of the three main applications integrated into the broader kOA environment.
+
+Related repository:
+
+- [UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets)
 
 ---
 
-### **Kristal**
+## Emerging capabilities
 
-The **knowledge artifact layer**.
+These systems are less mature today than Konnaxion, Orgo, and UCKK, but they are intended to become important cross-cutting capabilities.
 
-kOA treats knowledge as infrastructure, not content.
-That means knowledge must be:
+### SemantiK Architect
 
-* portable
-* structured
-* versioned
-* provenance-aware
-* queryable
-* reusable
-* explicit about certainty, validation, scope, and authority
+**Multilingual architecture and structured language generation.**
 
-A **Kristal** is the compiled output unit of that approach: a semantic artifact designed to preserve meaning, evidence, provenance, status, and traceability better than ordinary documents can.
+SemantiK is designed to support deterministic, auditable, label-preserving multilingual workflows across the ecosystem.
 
-Kristal can carry verified, uncertain, disputed, symbolic, fictional, mythological, or provisional material, but it must not flatten those differences into a single truth label. Its role is to make knowledge **portable, inspectable, policy-scoped, and reusable without losing context**.
+- [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect)
+- [SemantiK-Architect-GF-Zone-Auditor](https://github.com/Rejean-McCormick/SemantiK-Architect-GF-Zone-Auditor)
+- [Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit)
+- [Grammatical-Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian)
+
+### SenTient
+
+**Semantic capabilities for the ecosystem.**
+
+[SenTient](https://github.com/Rejean-McCormick/SenTient) is part of the emerging semantic / multilingual stack and is intended to help preserve meaning across systems and representations.
+
+### Kristal
+
+**Structured knowledge infrastructure.**
+
+The [Kristal Framework](https://github.com/Rejean-McCormick/Kristal-Framework) explores portable, structured, provenance-aware knowledge artifacts that can preserve meaning, status, certainty, scope, and traceability better than ordinary documents alone.
+
+Related work:
+
+- [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms)
+- [MediKristal](https://github.com/Rejean-McCormick/MediKristal) — specialized application that can join the ecosystem
+
+### Ariane
+
+**Automated navigation capability.**
+
+Ariane is part of the kOA architecture but is **not open source**. Its implementation therefore does not appear in the public repository map.
 
 ---
 
-### **SemantiK**
+## Architecture and alignment
 
-The **semantic / multilingual generation layer**.
+### [kOA Digital Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem)
 
-SemantiK supports structured language generation and semantic workflows across multilingual and knowledge-driven contexts. It helps move from raw information and abstract schemas toward readable, reusable, structured outputs.
+This repository is the **canonical architecture map** for how the applications fit together.
 
-Its outputs should remain:
+Its purpose is to document:
 
-* deterministic where possible
-* auditable
-* label-preserving
-* multilingual
-* traceable to structured inputs
+- boundaries between systems
+- integration contracts
+- data and knowledge flows
+- shared conventions
+- governance assumptions
+- cross-application workflows
+- the relationship between public, private, optional, and emerging components
+
+It should answer one question clearly:
+
+> **How do all kOA systems work together without collapsing into one monolith?**
 
 ---
 
 ## Design principles
 
-My work is guided by a few recurring principles:
+### Governability over engagement
 
-* **Governability over engagement**
-  Systems should not optimize only for activity; they should remain understandable, contestable, and accountable.
+Systems should remain understandable, contestable, and accountable rather than optimizing only for activity.
 
-* **Deterministic-first**
-  Critical flows should be reproducible and inspectable. AI can assist, but it should not be the only path to correctness.
+### Deterministic-first
 
-* **Policy-scoped integrity**
-  Systems should preserve the difference between verified, uncertain, disputed, revoked, fictional, symbolic, and provisional material. A claim should never be presented beyond the validation status, authority channel, certainty level, scope, and reader policy that support it.
+Critical flows should be reproducible and inspectable. AI can assist, but it should not become hidden authority or the only path to correctness.
 
-* **Verification before activation**
-  Runtime artifacts, knowledge packs, and operational outputs should become active only under explicit policy conditions. The point is not blind refusal; it is controlled activation, safe degradation, rollback, auditability, and visible status.
+### Policy-scoped integrity
 
-* **System of systems, not monolith**
-  Strong architecture comes from composable modules with explicit seams, not from one platform trying to absorb everything.
+Verified, uncertain, disputed, revoked, fictional, symbolic, and provisional material should remain distinguishable.
 
-* **Institutional memory as a first-class feature**
-  Decisions, workflows, and knowledge should compound over time instead of resetting every cycle.
+### Verification before activation
 
-* **Public-good orientation**
-  The aim is not only efficiency, but better collective capacity: better learning, better deliberation, better execution, better continuity.
+Knowledge packs, runtime artifacts, and operational outputs should become active only under explicit policy conditions, with safe degradation, rollback, auditability, and visible status.
+
+### System of systems, not monolith
+
+Strong architecture comes from composable systems with explicit seams.
+
+### Institutional memory as infrastructure
+
+Decisions, workflows, evidence, and knowledge should compound over time instead of disappearing at the end of each cycle.
+
+### Public-good orientation
+
+The objective is not only efficiency. It is stronger collective capacity: better learning, deliberation, execution, continuity, and accountability.
 
 ---
 
-## Selected repositories
+## Repository map
 
-### [**kOA_Digital_Ecosystem**](https://github.com/Rejean-McCormick/kOA_Digital_Ecosystem)
+### Core
 
-The architectural core of the ecosystem.
-This repo captures the end-to-end logic for governable knowledge-to-action: structured inputs, semantic artifacts, decision flows, execution pathways, and durable memory.
+- [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem)
+- [kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali)
+- [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion)
+- [Orgo](https://github.com/Rejean-McCormick/Orgo)
+- [UCKK](https://github.com/Rejean-McCormick/UCKK)
 
-### [**Konnaxion**](https://github.com/Rejean-McCormick/Konnaxion)
+### Konnaxion
 
-The civic knowledge and coordination platform.
-Focused on connecting people, knowledge, projects, consultations, and reusable learning / research pathways.
+- [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag)
+- [Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds)
+- [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag)
+- [Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager)
+- [Konnaxion-Ashoka-Systems-Change-Dossier](https://github.com/Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier)
 
-### [**Orgo**](https://github.com/Rejean-McCormick/Orgo)
+### Orgo
 
-The operational nervous system.
-Focused on signals, cases, tasks, routing, accountability, escalation, and insight generation for real institutions.
+- [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds)
+- [LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo)
 
-### [**kristal-framework**](https://github.com/Rejean-McCormick/kristal-framework)
+### UCKK
 
-Framework for structured knowledge artifacts.
-Focused on defining, compiling, validating, versioning, activating, distributing, and reusing Kristals as portable semantic infrastructure.
+- [UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets)
 
-### [**SemantiK_Architect**](https://github.com/Rejean-McCormick/SemantiK_Architect)
+### Language & semantics
 
-Semantic and multilingual generation toolkit.
-Focused on knowledge-driven language workflows, structured generation, and semantic expression across domains.
+- [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect)
+- [SenTient](https://github.com/Rejean-McCormick/SenTient)
+- [SemantiK-Architect-GF-Zone-Auditor](https://github.com/Rejean-McCormick/SemantiK-Architect-GF-Zone-Auditor)
+- [Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit)
+- [Grammatical-Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian)
+
+### Knowledge & specialized apps
+
+- [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework)
+- [MediKristal](https://github.com/Rejean-McCormick/MediKristal)
+- [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms)
+
+### Platform & documentation
+
+- [Konductor](https://github.com/Rejean-McCormick/Konductor)
+- [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs)
+- [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org)
+
+### Labs / exploratory work
+
+These repositories are intentionally separated from the main product map:
+
+- [Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces)
+- [Koali-Control-Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel)
+- [Koali-Scenario-Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic)
+- [Science-Silk-Road-Koali](https://github.com/Rejean-McCormick/Science-Silk-Road-Koali)
+- [Partners-for-Public-Good-Pressure-Test-Koali](https://github.com/Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali)
+- [LevelUpDiag-kOA-Linux](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux)
 
 ---
 
 ## Why this work exists
 
-We are entering a period where institutions face simultaneous pressure from information overload, coordination breakdown, public mistrust, and opaque automation.
+Institutions increasingly face several failures at once:
 
-The response cannot just be “more content,” “better dashboards,” or “AI everywhere.”
+- information overload
+- fragmented coordination
+- loss of institutional memory
+- public mistrust
+- opaque automation
+- brittle workflows
+- knowledge that cannot be reused safely
 
-What is needed is **governable infrastructure**:
+The answer is not simply more content, more dashboards, or AI everywhere.
 
-* systems that preserve meaning
-* systems that make decisions legible
-* systems that connect deliberation to execution
-* systems that produce reusable memory
-* systems that keep uncertainty, disagreement, provenance, and authority visible
-* systems that remain usable even under stress, contestation, or degraded conditions
+The problem space I work in is **governable infrastructure**:
 
-That is the problem space I work in.
+- systems that preserve meaning
+- systems that make decisions legible
+- systems that connect deliberation to execution
+- systems that produce reusable institutional memory
+- systems that keep uncertainty, disagreement, provenance, and authority visible
+- systems that remain usable under stress, contestation, or degraded conditions
 
 ---
 
-## Writing and public profiles
+## Writing, research, and public work
 
-* [initkoa.org](https://initkoa.org)
-* [Amazon author page](https://www.amazon.ca/stores/R%C3%A9jean-McCormick/author/B0G3B7DQWG)
-* [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
-* [Medium](https://medium.com/@boatbuilder610)
-* [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
-* [YouTube playlists](https://www.youtube.com/@KingKlown-XYZ/playlists)
+- [initkoa.org](https://initkoa.org)
+- [Medium](https://medium.com/@boatbuilder610)
+- [Google Scholar](https://scholar.google.com/citations?user=oVZ3n9kAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0009-0001-2086-854X)
+- [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
+- [Amazon author page](https://www.amazon.ca/stores/author/B0G3B7DQWG?ingress=0)
+- [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
+- [YouTube](https://www.youtube.com/@KingKlown-XYZ/playlists)
 
 ---
 
 ## Contact
 
-* **Email:** [rejean.mccormick@initkoa.org](mailto:rejean.mccormick@initkoa.org)
-* **GitHub:** [Rejean-McCormick](https://github.com/Rejean-McCormick)
-* **Hub:** [initkoa.org](https://initkoa.org)
-
-### Profiles & reference anchors
-
-* [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
-* [ORCID](https://orcid.org/0009-0001-2086-854X)
-* [Google Scholar](https://scholar.google.com/citations?user=oVZ3n9kAAAAJ&hl=en)
-* [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
-* [Mastodon](https://mastodon.social/@Rejean_McCormick)
-* [Facebook](https://www.facebook.com/profile.php?id=61566663549235)
-
-### Writing & publishing
-
-* [Medium](https://medium.com/@boatbuilder610)
-* [Amazon author page](https://www.amazon.ca/stores/author/B0G3B7DQWG?ingress=0&visitId=2c136ee2-ccf3-47b2-a4c9-c04125871944)
-
-### Audio
-
-* [Spotify](https://open.spotify.com/show/2hMamhJENVfWsULSuUVEG4)
-* [SoundCloud](https://soundcloud.com/rejean-mccormick)
-
-### Additional channels
-
-* [Instagram](https://www.instagram.com/kingklown.xyz/)
-* [X](https://x.com/KingKlownXYZ)
-* [TikTok](https://www.tiktok.com/@kingklown.xyz)
-* [Hugging Face](https://huggingface.co/KingKlown)
+- **Email:** [rejean.mccormick@initkoa.org](mailto:rejean.mccormick@initkoa.org)
+- **GitHub:** [Rejean-McCormick](https://github.com/Rejean-McCormick)
+- **Hub:** [initkoa.org](https://initkoa.org)
