@@ -300,6 +300,13 @@ Repository: [**SenTient**](https://github.com/Rejean-McCormick/SenTient)
 
 ---
 
+# Supporting language-engineering ecosystem
+
+The GF/RGL engineering systems under [MA-Gustave](https://github.com/MA-Gustave) are modeled as an **independent supporting ecosystem**, not as members of the kOA Digital Ecosystem. GF remains the external linguistic execution authority; GF RGL AI Compendium governs source-grounded engineering context, GF Wordbench produces validation evidence, Ars Magna Lulli orchestrates portfolio workflows, and GF Observatory projects maturity/readiness evidence.
+
+> **Support is not membership, and integration does not transfer authority.**
+
+
 # Public good, without economic lock-in
 
 The underlying software and knowledge infrastructure are intended to remain broadly inspectable and self-hostable.

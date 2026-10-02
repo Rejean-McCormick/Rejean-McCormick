@@ -1,31 +1,58 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Scénarios et usages
 
-Le **Koali Scenario Mosaic** sert à montrer la largeur de composition de l’architecture.
+Les scénarios sont une couche de **composition architecturale**. Ils montrent comment un problème peut traverser plusieurs capacités et composants sans supposer qu’un produit monolithique possède tout le workflow.
 
-Le corpus organise **120 scénarios** en **24 patterns réutilisables** et huit grandes familles :
+Le corpus synchronisé distingue :
 
-1. Find & Understand
-2. Learn & Share
-3. Collaborate & Create
-4. Choose & Govern
-5. Organize & Act
-6. Respond & Coordinate
-7. Remember & Improve
-8. Disseminate & Connect
+- **120 scénarios Mosaic**;
+- **36 archétypes de problèmes**;
+- **24 patterns de workflow réutilisables**;
+- **8 familles d’utilité**.
 
 ## À quoi sert le corpus
 
-Les scénarios permettent de répondre à une question plus intéressante que « peut-on imaginer un use case? ».
+Les scénarios permettent notamment de :
 
-Ils montrent comment des besoins très différents peuvent être composés à partir des mêmes primitives : connaissances, identité, expertise, délibération, décision, workflow, preuve, mémoire, publication.
+- tester si l’architecture couvre un besoin de bout en bout;
+- découvrir quelles capacités doivent coopérer;
+- identifier les handoffs et frontières d’autorité;
+- repérer les pertes possibles de contexte, preuve ou responsabilité;
+- comparer des compositions dans différents domaines;
+- voir quelles fonctions doivent continuer en mode dégradé/offline;
+- révéler des capacités transversales, comme la continuité de contexte.
 
 ## Ce que le corpus ne prétend pas
 
-Un scénario architectural n’est pas automatiquement un déploiement de production. Le Mosaic est une **cartographie de composition et d’usage**, pas un registre de 120 clients ou installations.
+Un scénario n’est pas automatiquement :
+
+- un déploiement en production;
+- une preuve d’intégration runtime;
+- un produit distinct;
+- une exigence universelle;
+- une preuve que tous les composants nommés sont indispensables.
+
+La notation conceptuelle `COMPOSED · runtime UNVERIFIED` signifie qu’une composition est documentée/plausible au niveau architecture, pas qu’elle a été exécutée avec succès en production.
+
+## Du scénario au workflow
+
+Le Kristal évite de transformer les 120 scénarios en 120 features. Il les rattache plutôt à des patterns réutilisables tels que :
+
+- Investigate a signal;
+- Reconstruct context and provenance;
+- Turn an incident into coordinated response;
+- Maintain a changing shared situation;
+- Keep working in field/offline mode;
+- Turn a decision into governed work;
+- Preserve why a decision was made;
+- Convert outcomes into reusable memory.
+
+Voir [Utilités et patterns de workflow](26-Utilites-et-workflows.md).
 
 ## Explorer
 
-- [Koali Scenario Mosaic — interface publique](https://koaliscenariomosaic.netlify.app/en/uses/)
-- [Dépôt Koali Scenario Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic)
+- [Koali Scenario Mosaic](https://koaliscenariomosaic.netlify.app/en/uses/)
+- [Koali Scenario Mosaic — dépôt](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic)

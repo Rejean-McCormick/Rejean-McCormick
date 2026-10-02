@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Carte des sources et autorité documentaire
 
 Cette page indique **où regarder lorsque deux documents semblent dire des choses différentes**.
@@ -11,34 +13,53 @@ Pour une question technique précise, préférer :
 1. le dépôt du composant qui possède le domaine;
 2. ses contrats, ADR, schémas et documents normatifs;
 3. les contrats d’intégration entre composants;
-4. les tests et preuves;
+4. les tests, preuves et artefacts signés/versionnés;
 5. les dossiers de statut pour l’état courant;
-6. ce wiki de synthèse;
-7. les documents narratifs ou prospectifs.
+6. le Kristal de synthèse pour la carte inter-systèmes;
+7. ce wiki de lecture;
+8. les documents narratifs, commerciaux ou prospectifs.
 
-Le wiki explique la carte; il ne doit pas devenir une deuxième source de vérité technique.
+Le wiki explique la carte; le Kristal relie la carte; **ni l’un ni l’autre ne doit silencieusement remplacer l’autorité du dépôt propriétaire**.
 
 ## Carte des dépôts
 
-| Domaine | Dépôt principal | Références |
+| Domaine | Dépôt principal | Rôle |
 |---|---|---|
-| Hôte, souveraineté, lifecycle | [kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | [Constitution](https://github.com/Rejean-McCormick/kOA-Linux-Koali/tree/main/docs/01-constitution) · [System](https://github.com/Rejean-McCormick/kOA-Linux-Koali/tree/main/docs/02-system) |
-| Expérience Koali | [Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) | [Architecture](https://github.com/Rejean-McCormick/Koali-Spaces/tree/main/docs/02-architecture) |
-| Civic / délibération | [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | [Technical Reference](https://github.com/Rejean-McCormick/Konnaxion/tree/main/docs/Technical-Reference) |
-| Exécution opérationnelle | [Orgo](https://github.com/Rejean-McCormick/Orgo) | [Technical Reference](https://github.com/Rejean-McCormick/Orgo/tree/master/docs/Technical-Reference) |
-| Connaissance / provenance | [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | [Kristal v5](https://github.com/Rejean-McCormick/Kristal-Framework/tree/main/docs/Technical-Reference/kristal-docs-v5) |
-| Interopérabilité | [Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) | [docs](https://github.com/Rejean-McCormick/Interaction-Kernel/tree/main/docs) |
-| Vue système | [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | [Layer Model](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/tree/main/docs/3-Layer-Model) |
-| Learning / diffusion | [UCKK](https://github.com/Rejean-McCormick/UCKK) | [docs](https://github.com/Rejean-McCormick/UCKK/tree/main/docs) |
-| Narrative | [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) | [START HERE](https://github.com/Rejean-McCormick/King-Klown-Canon/blob/main/START_HERE.md) |
-| Physical infrastructure | [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | [Core architecture](https://github.com/Rejean-McCormick/Kristal-Farms/tree/main/docs/10-core) |
-| NLG multilingue | [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) | [docs](https://github.com/Rejean-McCormick/SemantiK-Architect/tree/main/docs) |
-| Diagnostics / conformance | [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) | [docs](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag/tree/main/docs) |
-| Entity reconciliation | [SenTient](https://github.com/Rejean-McCormick/SenTient) | [README](https://github.com/Rejean-McCormick/SenTient/blob/main/README.md) |
+| Vue système | [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | architecture système-de-systèmes et contrats inter-domaines |
+| Hôte / souveraineté / lifecycle | [kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | environnement opératoire et autorité hôte |
+| Expérience Koali | [Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) | composition de présentation |
+| Civique / délibération | [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | état civique, consultation, délibération, DecisionRecords |
+| Exécution opérationnelle | [Orgo](https://github.com/Rejean-McCormick/Orgo) | Signals, Cases, Workflows, Tasks, résultats |
+| Connaissance / provenance | [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | Kristal State, référents, assertions, validation/reconnaissance |
+| Interopérabilité | [Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) | enveloppes/profils et transport inter-systèmes |
+| Learning / diffusion | [UCKK](https://github.com/Rejean-McCormick/UCKK) | apprentissage, archive/médiathèque, diffusion |
+| NLG multilingue | [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) | réalisation sémantique vers humain |
+| Résolution sémantique | [SenTient](https://github.com/Rejean-McCormick/SenTient) | extraction/réconciliation candidates |
+| Narrative | [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) | narration et mobilisation |
+| Infrastructure physique | [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | énergie, calcul, fibre, chaleur utile |
+
+## Écosystème de soutien GF / MA-Gustave
+
+Ces dépôts sont **indépendants du kOA Digital Ecosystem** même lorsqu’ils soutiennent SemantiK et les capacités multilingues :
+
+- [GF RGL AI Compendium](https://github.com/MA-Gustave/GF_RGL_AI_Compendium)
+- [GF Wordbench](https://github.com/MA-Gustave/GF_Wordbench)
+- [GF Observatory](https://github.com/MA-Gustave/GF_Observatory)
+- [Ars Magna Lulli](https://github.com/MA-Gustave/Ars-Magna-Lulli)
+
+Grammatical Framework / RGL conserve son autorité propre d’exécution et de structure linguistique.
+
+## Outils/patterns externes
+
+**Decidim, Ninai, OpenRefine et OpenTapioca** sont représentés comme soutiens/patterns externes. Leur présence dans une chaîne fonctionnelle n’implique ni appartenance à kOA ni transfert d’autorité.
 
 ## Intégrations majeures
 
-- Koali ↔ UCKK : [external integrations](https://github.com/Rejean-McCormick/kOA-Linux-Koali/blob/main/docs/02-system/16-external-integrations.md)
-- Konnaxion ↔ Orgo : [integration index](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/blob/main/docs/2-Technical-Reference/40-integration/orgo-konnaxion/index.md)
-- Interaction Kernel ↔ Kristal / Da’at : [kristal-daat](https://github.com/Rejean-McCormick/Interaction-Kernel/blob/main/docs/kristal-daat.md)
-- Koali Spaces ↔ apps : [integration principles](https://github.com/Rejean-McCormick/Koali-Spaces/blob/main/docs/11-integrations/00-integration-principles.md)
+- Konnaxion → Orgo : décision civique vers exécution gouvernée;
+- Orgo → Konnaxion : impact/accountability;
+- EncyKlopedia → Da’at : handoff de corpus/evidence, sans validation épistémique automatique;
+- Kristal → UCKK : projection consommateur rebuildable;
+- GF/Wordbench → SemantiK : artefacts linguistiques + preuves, puis conformance/runtime propre à SemantiK;
+- Koali Spaces ↔ applications : présentation/routage sans absorption de l’état métier.
+
+Voir aussi : [Artefacts, contrats et lifecycles](28-Artefacts-contrats-lifecycles.md).

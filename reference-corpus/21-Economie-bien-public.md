@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Modèle économique : bien public sans dépendance propriétaire
 
 Une architecture publique n’a pas besoin d’être économiquement naïve.

@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Offline, souveraineté et résilience
 
 La continuité offline est un principe d’architecture, pas seulement une option d’interface.
@@ -29,6 +31,10 @@ Cette propriété est pertinente pour :
 - besoin volontaire de souveraineté locale.
 
 Ce n’est pas une promesse d’invulnérabilité. C’est une stratégie de **réduction de dépendance et de limitation du rayon d’impact**.
+
+## Ce que le Kristal relie à la résilience
+
+La résilience n’est pas un composant unique. Elle combine notamment identité locale, politiques locales, ressources, releases vérifiables, backup/recovery, fonctionnement dégradé, artefacts portables, protocoles d’échange et capacité de reconstruire des projections. Les workflows de scénario ajoutent une dimension importante : **continuité de contexte** à travers un handoff, un incident, un changement de personne, une panne réseau ou une restauration.
 
 ## Documents de référence
 

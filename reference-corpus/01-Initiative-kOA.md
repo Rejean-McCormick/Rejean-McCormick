@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # L’initiative kOA
 
 kOA est le cadre général. Le **kOA Digital Ecosystem** en est une pièce majeure, mais les deux termes ne sont pas synonymes.

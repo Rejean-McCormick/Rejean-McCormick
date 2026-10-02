@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Expertise, signal et intelligence collective
 
 L’une des thèses centrales de kOA est que **l’expertise est une richesse collective largement sous-utilisée**.

@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Orgo
 
 Orgo est l’autorité de travail opérationnel.
@@ -27,6 +29,15 @@ Konnaxion peut produire une décision, une consultation ou un signal collectif. 
 ## Orgo Worlds
 
 Orgo Worlds applique la logique de contexte/world à l’exécution opérationnelle afin que des environnements logiquement distincts puissent partager une plateforme sans partager implicitement leur état.
+
+## Contrats de frontière
+
+Le Kristal rend explicite un aller-retour sans fusion des autorités :
+
+- `governance.decision.execute/1.0.0` : **Konnaxion → Orgo**, transporte une décision finalisée vers l’exécution gouvernée;
+- `accountability.impact.publish/1.0.0` : **Orgo → Konnaxion**, retourne impact et accountability vers l’autorité civique source.
+
+Orgo possède notamment **Signal, WorkflowVersion, Case, Task, IntegrationOperation**, l’état de retry/outbox et les résultats opérationnels. Il ne devient pas propriétaire du DecisionRecord source.
 
 ## Documents de référence
 

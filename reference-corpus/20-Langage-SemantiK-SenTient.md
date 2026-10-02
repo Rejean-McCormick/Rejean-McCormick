@@ -1,32 +1,71 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Langage, SemantiK Architect et SenTient
 
-La capacité collective dépend aussi de la capacité à faire circuler du sens entre langues, systèmes et représentations.
+La couche langage/sémantique sépare **interprétation**, **connaissance**, **réalisation linguistique** et **ingénierie de langue**. Une bonne intégration ne doit pas transformer un outil linguistique externe en autorité sur le sens ou la vérité du Digital Ecosystem.
 
 ## SemantiK Architect
 
-SemantiK Architect est une infrastructure de génération de langage naturel structurée autour de représentations sémantiques, de grammaires et de moteurs linguistiques. L’objectif est de séparer autant que possible **ce qui doit être dit** de **la façon de le réaliser dans une langue donnée**.
+SemantiK Architect réalise des représentations sémantiques vers des sorties humaines multilingues. Il peut planifier et articuler, mais n’est pas l’autorité de connaissance de Kristal et n’exécute pas automatiquement une `actionability` comme une directive.
 
-Cette approche est particulièrement pertinente pour la diffusion multilingue, Abstract Wikipedia / Wikifunctions et les environnements où la traçabilité du sens est plus importante qu’une génération libre de texte.
+La frontière avec GF est importante : le runtime SemantiK consomme des artefacts linguistiques validés; il ne devient pas l’atelier qui modifie silencieusement les sources GF/RGL.
 
-### Références
+## SemantiK Runtime Orchestrator
 
-- [Dépôt SemantiK Architect](https://github.com/Rejean-McCormick/SemantiK-Architect)
-- [README](https://github.com/Rejean-McCormick/SemantiK-Architect/blob/main/README.md)
-- [Setup & Deployment](https://github.com/Rejean-McCormick/SemantiK-Architect/blob/main/docs/00-SETUP_AND_DEPLOYMENT.md)
-- [Tools and Tests Inventory](https://github.com/Rejean-McCormick/SemantiK-Architect/blob/main/docs/17-TOOLS_AND_TESTS_INVENTORY.md)
-- [GF Zone Auditor](https://github.com/Rejean-McCormick/SemantiK-Architect-GF-Zone-Auditor)
+Le Runtime Orchestrator gère le séquençage de release, la promotion/rollback et l’ordre d’activation des RuntimeSets SemantiK. Il orchestre la transition runtime sans devenir l’autorité linguistique GF/RGL ni l’autorité de connaissance Kristal.
 
 ## SenTient
 
-SenTient traite le passage du texte non structuré vers des entités et relations structurées, notamment dans des contextes Wikidata/Wikibase. Dans l’écosystème plus large, il représente une famille de fonctions d’interprétation et de structuration sémantique.
+SenTient fournit extraction, résolution et réconciliation candidates. Il aide à transformer des entrées ambiguës en structures plus explicites tout en conservant l’incertitude nécessaire.
 
-### Références
+> **Résoudre un candidat ≠ reconnaître un référent comme autorité canonique.**
 
-- [Dépôt SenTient](https://github.com/Rejean-McCormick/SenTient)
-- [README SenTient](https://github.com/Rejean-McCormick/SenTient/blob/main/README.md)
+La reconnaissance, la provenance et l’état épistémique restent gouvernés par les systèmes qui les possèdent.
 
-## Frontière
+## Écosystème GF / MA-Gustave
 
-Ni SemantiK ni SenTient ne doivent être confondus avec l’autorité de connaissance de Kristal. Les outils linguistiques peuvent proposer, interpréter ou réaliser; l’autorité, la validation et la provenance restent gouvernées par leurs systèmes propriétaires.
+L’ingénierie linguistique GF est **en amont** du runtime SemantiK et constitue un écosystème de soutien indépendant :
+
+```text
+GF / RGL
+  → GF RGL AI Compendium
+  → GF Wordbench
+  → Ars Magna Lulli
+       ↘ GF Observatory
+  → artefact PGF / grammar immuable + preuves
+  → conformance SemantiK
+  → RuntimeSet
+```
+
+Les responsabilités restent distinctes :
+
+- **GF/RGL** : autorité d’exécution/structure — typing, compilation, parsing, linearization, génération, morphologie, PGF;
+- **GF RGL AI Compendium** : contrats, provenance, règles de preuve, workflows et gates; ne compile pas;
+- **GF Wordbench** : validation native GF, diagnostics, régression, goldens, manifests et preuves;
+- **Ars Magna Lulli** : orchestration GitOps multi-projets et états de promotion;
+- **GF Observatory** : projection read-only de maturité/readiness/preuves;
+- **revue humaine** : acceptation linguistique/publication lorsque requise.
+
+Le handoff `semantik-wordbench-handoff-v1` est fail-closed et distingue explicitement **accepté pour validation Wordbench** de **preuve de release**.
+
+## Outils externes de soutien
+
+- **Ninai** : input/adaptateur sémantique optionnel à la frontière SemantiK;
+- **OpenRefine** : nettoyage/réconciliation de données et soutien à la résolution de candidats;
+- **OpenTapioca** : entity linking Wikidata externe;
+- **Grammatical Framework** : autorité linguistique externe, pas membre du Digital Ecosystem.
+
+Voir [Écosystèmes et outils de soutien](27-Ecosystemes-de-soutien.md).
+
+## Documents de référence
+
+- [SemantiK Architect](https://github.com/Rejean-McCormick/SemantiK-Architect)
+- [SenTient](https://github.com/Rejean-McCormick/SenTient)
+- [GF RGL AI Compendium](https://github.com/MA-Gustave/GF_RGL_AI_Compendium)
+- [GF Wordbench](https://github.com/MA-Gustave/GF_Wordbench)
+- [GF Observatory](https://github.com/MA-Gustave/GF_Observatory)
+- [Ars Magna Lulli](https://github.com/MA-Gustave/Ars-Magna-Lulli)
+- [GF Zone Auditor](https://github.com/Rejean-McCormick/SemantiK-Architect-GF-Zone-Auditor)
+- [Grammatical Framework audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit)

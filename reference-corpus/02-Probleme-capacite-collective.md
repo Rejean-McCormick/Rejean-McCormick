@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Le problème : transformer l’abondance en capacité collective
 
 Les sociétés contemporaines n’ont pas seulement un problème d’information. Elles disposent déjà d’une quantité immense de connaissances, d’expérience, de créativité, de données, de travailleurs qualifiés et de personnes prêtes à contribuer.

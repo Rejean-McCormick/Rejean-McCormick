@@ -1,51 +1,45 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # UCKK
 
-UCKK est l’infrastructure d’apprentissage et de diffusion du corpus.
+UCKK / Univers-Cité King Klown est la branche d’apprentissage, média et diffusion publique de l’initiative kOA. Elle peut fonctionner comme environnement indépendant et peut consommer certaines projections du Digital Ecosystem sans devenir une dépendance runtime obligatoire ni l’autorité du canon Kristal.
 
-L’implémentation actuelle est construite sur Moodle et ajoute une distribution coordonnée de plugins pour créer notamment :
+## Sous-systèmes distingués
 
-- parcours et cours;
-- défis;
-- assemblées;
-- archives;
-- mécanismes d’intégrité;
-- reporting;
-- médiathèque publique;
-- workflows de création et de publication.
+| Sous-système | Responsabilité |
+|---|---|
+| **UCKK Institutional Core** | programmes, pathways, rôles, profils, provenance, visibilité, navigation et services de bridge |
+| **UCKK Archive / Mediatheque** | archive didactique/média, evidence, provenance, revisions, exports et objets Kristal projetés |
+| **UCKK Assembly** | assemblées et décisions locales UCKK |
+| **UCKK Challenge** | activités/défis et résultats appliqués avec preuve |
+| **UCKK Integrity** | review, appels, corrections, invalidation et garde-fous d’intégrité institutionnelle |
+| **UCKK Seed** | initialisation/versionnement des registres académiques et templates |
+| **UCKK Reports** | reporting institutionnel et exports autorisés |
+| **UCKK Dashboard** | composition de données de présentation sans devenir leur autorité |
+| **UCKK AI Provider** | extension IA optionnelle; n’est pas une autorité institutionnelle |
 
 ## Une plateforme réutilisable
 
-UCKK ne doit pas être confondu avec le seul contenu King Klown/kOA.
-
-La distribution technique peut être adaptée pour un professeur, une institution, un gouvernement, une communauté, une organisation ou un créateur avec un autre contenu et une autre identité.
+UCKK peut combiner apprentissage, contenus, défis, assemblées, archive et diffusion. Son organisation interne doit néanmoins préserver les frontières : l’archive n’est pas l’assemblée, le dashboard n’est pas la source de vérité, et le fournisseur IA n’est pas le décideur institutionnel.
 
 ## Standalone et intégrations
 
-Le mode standalone est un principe important : UCKK doit pouvoir fonctionner comme environnement Moodle complet sans dépendance obligatoire à Konnaxion.
+UCKK peut fonctionner seul. Lorsqu’il consomme des artefacts du Digital Ecosystem, la préférence est aux contrats et projections explicites plutôt qu’à une dépendance cachée ou à une base partagée.
 
-Les intégrations externes sont optionnelles. Lorsqu’elles existent, elles ne doivent pas contourner les permissions, la confidentialité ni les journaux d’audit de Moodle.
+Le contrat de projection `uckk.univers-cite-projection/1.0.0` représente cette idée : une projection consommateur peut être matérialisée et reconstruite sans transférer le canon Kristal à UCKK.
 
 ## Médiathèque
 
-La Médiathèque est une surface publique de consultation; l’Explorateur Médiathèque fournit recherche, filtres, navigation et découverte. Les médias, collections, sources, relations, droits et politiques restent possédés par le module d’archive.
+La médiathèque/Archive UCKK est une autorité de contenu dans son propre domaine. Elle ne doit pas être confondue avec la **kOA Mediatheque** de Koali, qui possède un rôle local/offline distinct sur catalogue, versions, provenance, droits, renditions et lifecycle local.
 
 ## Publication depuis Koali
 
-La publication vers UCKK est un flux gouverné : un contenu local sélectionné passe d’abord par le Publication Gateway de Koali, puis par le UCKK Publication Bridge pour l’emballage et le transport. Cela ne crée pas de synchronisation automatique.
+Les échanges avec Koali passent par des frontières explicites de publication/import. Le fait qu’un contenu soit publiable ne signifie pas que l’un des systèmes peut écrire directement dans l’état interne de l’autre.
 
 ## Documents de référence
 
-- [UCKK — master execution doctrine](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/00_master_execution_doctrine.md)
-- [Domain boundaries and glossary](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/01_domain_boundaries_and_glossary.md)
-- [Distribution architecture](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/02_distribution_architecture.md)
-- [Pedagogy, courses, competencies and badges](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/06_pedagogy_courses_competencies_badges.md)
-- [Challenges and assemblies](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/07_challenges_and_assemblies.md)
-- [Integrity, archives and privacy](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/08_integrity_archives_and_privacy.md)
-- [Integrations, reporting and delivery](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/09_integrations_reporting_delivery.md)
-- [Médiathèque / Explorateur](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/DOC_mediatheque_explorateur.md)
-- [Faculty public contract](https://github.com/Rejean-McCormick/UCKK/blob/main/docs/12_faculty_pages_atlas_public_contract.md)
-- [Koali — UCKK Publication Bridge](https://github.com/Rejean-McCormick/kOA-Linux-Koali/blob/main/docs/04-components/uckk-publication-bridge.md)
-
-Surface publique : [uckk.org](https://uckk.org)
+- [UCKK](https://github.com/Rejean-McCormick/UCKK)
+- [UCKK Assets](https://github.com/Rejean-McCormick/UCKK-Assets)
+- [UCKK Ops Console](https://github.com/Rejean-McCormick/UCKK-Ops-Console)

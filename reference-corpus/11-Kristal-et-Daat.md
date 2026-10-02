@@ -1,45 +1,60 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Kristal et Da’at
 
-Kristal traite la connaissance comme un artefact structuré plutôt que comme un simple texte.
+Kristal est une infrastructure de mémoire structurée portable. Le modèle de référence du Kristal de synthèse suit **Kristal Standard 6.0.0**.
 
-Un artefact peut préserver :
+Kristal n’est pas une base de vérité globale, un moteur de workflow, une base opérationnelle universelle ni une autorité d’exécution.
 
-- affirmations;
-- sources;
-- provenance;
-- statut et incertitude;
-- relations sémantiques;
-- signatures;
-- autorité reconnue;
-- historique de validation;
-- règles de compilation et de reproductibilité.
+## Ce que Kristal porte
 
-## Pourquoi c’est important
+Un **Kristal State** peut représenter notamment :
 
-Un document peut être lu, mais il est difficile pour plusieurs systèmes de savoir automatiquement :
+- référents et identité déterministe;
+- assertions atomiques sujet–prédicat–objet;
+- valuations typées;
+- coordinates et applicability;
+- evidence/provenance;
+- validation et reconnaissance;
+- conflits, succession et lineage;
+- `record_role`;
+- `actionability` séparée de l’autorité d’exécution.
 
-- quelle affirmation vient de quelle source;
-- ce qui est certain ou contesté;
-- ce qui a changé;
-- quel organisme reconnaît une autorité;
-- si deux artefacts sont réellement identiques;
-- si un résultat peut être reproduit.
+Les états de valeur distinguent explicitement connu, inconnu, non applicable, indéterminé et non mesuré plutôt que de forcer une valeur artificielle.
 
-Kristal vise à rendre ces propriétés explicites et inspectables.
+## Validation, conflit et évolution
+
+Un objet ou une assertion peut être hypothétique, claimed, sourced, disputed, reviewed, validated, rejected, retracted ou superseded. Une correction ne demande donc pas nécessairement de muter silencieusement l’ancienne connaissance : une nouvelle version, un conflit ou une succession peuvent être représentés explicitement.
 
 ## Da’at
 
-Da’at est la frontière d’adaptation entre Kristal et les mécanismes d’interaction du reste de l’écosystème. Cette séparation évite que le protocole de transport devienne lui-même l’autorité épistémique.
+Da’at est une **frontière de mapping/ACL/anti-corruption** vers les contrats Kristal natifs. Cette position est importante :
+
+- l’acquisition externe ne devient pas automatiquement validation Kristal;
+- le transport Interaction Kernel ne devient pas connaissance;
+- un schéma externe ne devient pas l’ontologie souveraine de Kristal;
+- les ACL et mappings peuvent évoluer sans transférer l’autorité des référents et assertions.
+
+## Chaîne de connaissance
+
+Une chaîne représentative est :
+
+**source → EncyKlopedia → Da’at → Kristal State → validation/reconnaissance → artefact/projection**
+
+EncyKlopedia possède la découverte/acquisition et l’evidence immuable; SenTient peut contribuer à l’extraction/résolution candidates; Kristal conserve l’autorité sur ses référents, assertions et états de reconnaissance.
+
+## Pourquoi c’est important
+
+Cette séparation permet une connaissance portable, inspectable et réutilisable sans confondre :
+
+**preuve → interprétation → reconnaissance → actionability → exécution**
+
+Voir aussi : [Artefacts, contrats et lifecycles](28-Artefacts-contrats-lifecycles.md).
 
 ## Documents de référence
 
-- [Kristal v5 — What is Kristal](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/00-overview/what-is-kristal-v5.md)
-- [Vision and scope](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/00-overview/vision-and-scope.md)
-- [Validation, certainty and authority](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/00-overview/validation-certainty-and-authority.md)
-- [Core specification](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/01-core-spec/kristal-v5-core-spec.md)
-- [Structured epistemic state](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/01-core-spec/structured-epistemic-state.md)
-- [IDs, canonicalization and hashing](https://github.com/Rejean-McCormick/Kristal-Framework/blob/main/docs/Technical-Reference/kristal-docs-v5/01-core-spec/ids-canonicalization-hashing.md)
-- [Interaction Kernel — Kristal / Da’at](https://github.com/Rejean-McCormick/Interaction-Kernel/blob/main/docs/kristal-daat.md)
-- [Digital Ecosystem — Kristal and Da’at](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem/blob/main/docs/1-Overview/Components-Kristal-and-Daat.md)
+- [Kristal Framework](https://github.com/Rejean-McCormick/Kristal-Framework)
+- [Kristal Reference](https://github.com/Rejean-McCormick/Kristal-Reference)
+- [Interaction Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel)

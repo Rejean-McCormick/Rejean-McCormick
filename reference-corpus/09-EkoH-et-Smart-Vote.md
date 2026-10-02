@@ -1,38 +1,42 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # EkoH et Smart Vote
 
-EkoH et Smart Vote servent à améliorer la qualité du signal sans supprimer la participation générale.
+EkoH et Smart Vote servent à rendre des lectures du signal plus explicites sans supprimer le baseline de participation générale.
 
 ## EkoH
 
-EkoH représente des signaux **contextuels** de compétence et de crédibilité éthique. Une personne peut être très compétente dans un domaine sans que cela lui confère un rang général supérieur.
+EkoH représente des signaux **contextuels** de compétence, qualité de contribution et crédibilité éthique. Le signal reste borné au domaine et à son contexte : une personne peut être très compétente dans un domaine sans acquérir un rang social universel.
+
+EkoH est une **capacité partagée de Konnaxion**. Il n’est ni une base de vérité universelle, ni une autorité de décision générale, ni un mécanisme permettant de muter directement le canon de connaissance.
 
 ## Smart Vote
 
-Smart Vote conserve une lecture de participation brute tout en permettant des lectures consultatives supplémentaires.
+Smart Vote conserve un baseline de participation ordinaire et peut publier des **lectures supplémentaires** selon des règles explicites et contestables.
 
-L’idée n’est pas :
+Le modèle distingue donc :
 
-> « les experts votent à la place de tout le monde »
+- le record de participation;
+- les règles/lenses appliquées;
+- les lectures dérivées;
+- la décision et son autorité propre.
 
-mais plutôt :
-
-> « tout le monde peut participer, et le système peut aussi montrer ce que le signal devient lorsqu’on tient compte de compétences pertinentes et de critères éthiques explicites ».
-
-Cela permet de comparer les lectures au lieu de cacher le désaccord.
+Une lecture pondérée n’efface pas le baseline et ne transforme pas automatiquement l’expertise en souveraineté.
 
 ## Découverte de talent
 
-À plus long terme, les mécanismes de signal peuvent contribuer à découvrir des personnes dont les jugements se révèlent régulièrement solides, même si elles ne possèdent pas encore de reconnaissance institutionnelle forte.
+Les signaux historiques peuvent contribuer à rendre visibles des compétences ou contributions de qualité qui n’étaient pas déjà reconnues institutionnellement. Cette possibilité doit rester auditable, révisable, limitée au domaine et distincte d’un classement universel des personnes.
 
-Ce type de mécanisme doit être conçu pour rester contestable, auditable et limité au domaine concerné.
+## Frontières
+
+- EkoH **informe**; il ne possède pas la vérité Kristal.
+- Smart Vote **produit des lectures**; il ne remplace pas silencieusement la procédure civique source.
+- Les règles de lecture doivent être visibles et contestables.
+- Le résultat d’une lecture ne donne pas automatiquement l’autorité d’exécuter une action.
 
 ## Documents de référence
 
-- [EkoH — System Overview](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/EkoH%20-%20System%20Overview.md)
-- [EkoH + Smart Vote — data model](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/EkoH%20and%20Smart%20Vote%20-%20Data%20Model.md)
-- [EkoH + Smart Vote — technical specification](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/EkoH%20and%20Smart%20Vote%20-%20Technical%20Specification.md)
-- [Smart Vote — Reading Contract](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/Smart%20Vote%20-%20Reading%20Contract.md)
-- [Canonical DB schema](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/ekoh-smart-vote-canonical-db-schema-v1-1.md)
-- [Consultation simulations](https://github.com/Rejean-McCormick/Konnaxion/blob/main/docs/Technical-Reference/EkoH%20Smart%20Vote/smart-vote-consultation-simulations.md)
+- [Konnaxion — EkoH / Smart Vote](https://github.com/Rejean-McCormick/Konnaxion/tree/main/docs/Technical-Reference)
+- [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion)

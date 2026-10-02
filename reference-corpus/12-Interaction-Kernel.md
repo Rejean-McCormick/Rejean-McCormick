@@ -1,5 +1,7 @@
 [← Corpus](README.md) · [Table of contents](CONTENTS.md) · [Profile](../README.md)
 
+<!-- Synchronisé avec Kristal-kOA-Ecosystem v0.4.0 — 2026-10-02. Ce wiki reste une projection de lecture; les dépôts propriétaires conservent leur autorité. -->
+
 # Interaction Kernel
 
 L’Interaction Kernel est un protocole d’interopérabilité entre systèmes autonomes.
@@ -25,6 +27,12 @@ L’Interaction Kernel impose plutôt une relation explicite :
 > **demander / signaler / recevoir / attester**, sans transfert implicite de propriété du domaine.
 
 Une acceptation de commande ne signifie pas nécessairement que l’effet final est déjà réalisé. Les reçus, événements, idempotency et mécanismes de réconciliation permettent de représenter proprement cette différence.
+
+## Frontière d’état
+
+L’Interaction Kernel possède les **enveloppes, profils et garanties d’échange**, pas l’état métier des participants. Les Commands, Queries, Events, Receipts, résultats et échanges d’artefacts permettent à des systèmes autonomes de coopérer sans qu’IK devienne leur base de données partagée.
+
+> **Transporter un état ≠ posséder cet état.**
 
 ## Documents de référence
 

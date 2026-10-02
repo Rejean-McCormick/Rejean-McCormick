@@ -1,6 +1,6 @@
 # kOA Reference Corpus — Table of Contents
 
-The corpus is a stable map of the kOA initiative. It deliberately avoids freezing release numbers or maturity percentages; current state is linked to living status sources.
+The corpus is a stable map of the kOA initiative. It deliberately avoids freezing maturity into one scalar or treating scenario compositions as production evidence.
 
 ## Orientation
 - [Reference Corpus home](README.md)
@@ -23,17 +23,21 @@ The corpus is a stable map of the kOA initiative. It deliberately avoids freezin
 - [11 — Kristal et Da’at](11-Kristal-et-Daat.md)
 - [12 — Interaction Kernel](12-Interaction-Kernel.md)
 
-## Principles
+## Principles and use
 - [13 — IA et déterminisme](13-IA-et-determinisme.md)
 - [14 — Offline, souveraineté et résilience](14-Offline-souverainete-resilience.md)
 - [15 — Échelle et interopérabilité](15-Echelle-interoperabilite.md)
 - [16 — Scénarios et usages](16-Scenarios-et-usages.md)
+- [26 — Utilités et patterns de workflow](26-Utilites-et-workflows.md)
+- [28 — Artefacts, contrats et lifecycles](28-Artefacts-contrats-lifecycles.md)
+- [29 — Applications adjacentes et outillage](29-Applications-adjacentes-et-outillage.md)
 
-## Learning, culture and infrastructure
+## Learning, culture, language and infrastructure
 - [17 — UCKK](17-UCKK.md)
 - [18 — King Klown et adoption](18-King-Klown-et-adoption.md)
 - [19 — Kristal Farms](19-Kristal-Farms.md)
 - [20 — Langage : SemantiK / SenTient](20-Langage-SemantiK-SenTient.md)
+- [27 — Écosystèmes et outils de soutien](27-Ecosystemes-de-soutien.md)
 
 ## Sustainability and deployment
 - [21 — Économie / bien public](21-Economie-bien-public.md)
