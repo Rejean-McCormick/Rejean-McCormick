@@ -1,417 +1,264 @@
-# Réjean McCormick
+# kOA Ecosystem Map
 
-**Socio-technical architect building kOA — an open, governable infrastructure for turning distributed human knowledge, expertise and effort into collective capacity.**
+**Systems, repositories, authority boundaries, public surfaces and current implementation roots.**
 
-I work on systems that help people and institutions **find knowledge, mobilize expertise, deliberate, decide, execute, preserve memory, and learn from what happened**.
-
-> **kOA is not a single application.**  
-> It is a broader initiative connecting digital infrastructure, learning and knowledge diffusion, physical infrastructure research, multilingual systems, and cultural mobilisation.
-
-The underlying idea is simple:
-
-> **Humanity already possesses enormous knowledge, expertise, creativity and willingness to contribute.  
-> The missing infrastructure is the one that allows these resources to be discovered, connected, evaluated, credited, transformed into decisions, carried into action, and preserved as collective memory.**
-
----
+This repository is a navigation map of the **kOA ecosystem**. It is intentionally organized around systems and repositories rather than around a person. The authoritative implementation details remain in the repositories that own them; this page connects those sources without collapsing their authority boundaries.
 
 ## Start here
 
-### kOA Reference Corpus
+- **Canonical machine-readable system map:** [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem)
+- **Architecture/reference corpus:** [kOA Reference Corpus](reference-corpus/README.md)
+- **Public hub:** [initkoa.org](https://initkoa.org)
+- **Public coordination:** [konnaxion.com](https://konnaxion.com)
+- **Learning / diffusion:** [uckk.org](https://uckk.org)
+- **Scenario map:** [Koali Scenario Mosaic](https://koaliscenariomosaic.netlify.app/en/uses/)
 
-The **kOA Reference Corpus** is the main map of the initiative.
-
-It explains the architecture, concepts, systems, authority boundaries, knowledge model, expertise mechanisms, sovereignty principles, learning infrastructure, cultural layer, physical infrastructure, deployment model, and links directly to authoritative technical documentation in the relevant repositories.
-
-➡️ [**Explore the kOA Reference Corpus**](reference-corpus/README.md)
-
-For current implementation state, the corpus links directly to living `docs/status/` directories and equivalent status sources instead of duplicating release information here.
+> **Map rule:** repository presence does not automatically imply architectural authority, runtime activation, or membership in the kOA Digital Ecosystem. Support, research, content, diagnostics and external dependencies remain explicitly separated.
 
 ---
 
-## kOA at a glance
+## Ecosystem at a glance
 
 ```mermaid
 flowchart TD
-    KOA["kOA<br/>broader initiative"]
-    DE["kOA Digital Ecosystem<br/>knowledge → decision → action → memory"]
-    UCKK["UCKK<br/>learning · media · public diffusion"]
-    KF["Kristal Farms<br/>energy · compute · fibre · useful heat"]
-    KK["King Klown<br/>narrative · culture · mobilisation"]
+    KOA["kOA initiative"]
+    DIGITAL["kOA Digital Ecosystem"]
+    UCKK["UCKK · learning / media / diffusion"]
+    FARMS["Kristal Farms · physical infrastructure"]
+    CULTURE["King Klown · narrative / mobilisation"]
+    RESEARCH["Research / experimental systems"]
 
-    KOA --> DE
+    KOA --> DIGITAL
     KOA --> UCKK
-    KOA --> KF
-    KOA --> KK
+    KOA --> FARMS
+    KOA --> CULTURE
+    KOA --> RESEARCH
 
-    DE --> KOALI["Koali / kOA-Linux<br/>operating environment"]
-    DE --> SPACES["Koali Spaces<br/>experience composition"]
-    DE --> KONN["Konnaxion<br/>public coordination"]
-    DE --> ORGO["Orgo<br/>operational execution"]
-    DE --> KR["Kristal + Da'at<br/>knowledge authority"]
-    DE --> IK["Interaction Kernel<br/>interoperability protocol"]
+    DIGITAL --> KOALI["Koali / kOA-Linux · host authority"]
+    DIGITAL --> SPACES["Koali Spaces · experience composition"]
+    DIGITAL --> KONN["Konnaxion · civic coordination"]
+    DIGITAL --> ORGO["Orgo · execution"]
+    DIGITAL --> KRISTAL["Kristal + Da'at · knowledge authority"]
+    DIGITAL --> IK["Interaction Kernel · interoperability"]
+    DIGITAL --> SEM["SemantiK + SenTient · language / semantics"]
 
-    KONN --> EKOH["EkoH + Smart Vote<br/>expertise · signal quality"]
-    DE --> SEM["SemantiK / SenTient<br/>language · semantics"]
-
-    KOALI -. governed publication .-> UCKK
-    KK -. pedagogy / adoption .-> UCKK
+    KONN --> WORLD["Worlds / capsules / diagnostics"]
+    KRISTAL --> KOL["Kollection / Reference / EncyKlopedia"]
+    KRISTAL --> KONS["Konstellation / Kompiler"]
+    UCKK --> MED["Médiathèque / Moodle / publishing"]
 ```
 
 ---
 
-## The central problem
+## Core digital architecture
 
-Modern societies face a paradox of abundance.
+| System | Function | Repositories |
+|---|---|---|
+| **kOA Digital Ecosystem** | Canonical ecosystem map and authority-aware system model | [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) |
+| **Koali / kOA-Linux** | Host authority, identity/trust, policy, privileges, lifecycle, resilience and local continuity | [kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali) · [Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) · [Koali-Control-Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel) · [LevelUpDiag-kOA-Linux](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux) |
+| **Interaction Kernel** | Distributed interoperability: commands, queries, events, receipts, artifacts and reconciliation | [Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) |
+| **Konfid** | Security/control-plane functions | [Konfid](https://github.com/Rejean-McCormick/Konfid) |
+| **Konductor** | Orchestration / development tooling | [Konductor](https://github.com/Rejean-McCormick/Konductor) |
 
-We have more information, expertise, communication capacity and computational power than ever before, yet our ability to convert that abundance into **coherent collective action** remains weak.
+## Civic coordination and execution
 
-Knowledge is fragmented. Expertise is distributed. Participation often ends before execution. Decisions lose their reasons. Institutions repeatedly relearn what they once knew.
+| System | Function | Repositories |
+|---|---|---|
+| **Konnaxion** | Consultation, deliberation, expertise, coordination, collective knowledge and civic surfaces | [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) · [Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) · [Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) |
+| **Konnaxion assurance** | Security, qualification and diagnostic evidence | [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) · [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag) |
+| **Orgo** | Signal → case → workflow → task → result → evidence | [Orgo](https://github.com/Rejean-McCormick/Orgo) · [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) · [LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) |
+| **Voting / decision research** | Deterministic vote-result artifacts and decision-system experiments | [VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) |
 
-The problem is therefore not merely informational. It is infrastructural.
+## Knowledge, Kristal and semantic infrastructure
 
-A capable collective needs continuity between:
+| System | Function | Repositories |
+|---|---|---|
+| **Kristal** | Structured claims, provenance, uncertainty, validation state, identity and portable knowledge | [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) · [Kristal-Kollection](https://github.com/Rejean-McCormick/Kristal-Kollection) · [Kristal-Reference](https://github.com/Rejean-McCormick/Kristal-Reference) |
+| **EncyKlopedia** | Source discovery, acquisition, extraction and evidence handoff | [EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) |
+| **Konstellation** | Kristal-oriented navigation / presentation layer | [Konstellation](https://github.com/Rejean-McCormick/Konstellation) |
+| **MediKristal** | Domain/application layer around Kristal | [MediKristal](https://github.com/Rejean-McCormick/MediKristal) · [MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) |
+| **Omni-Wiki** | Wiki / knowledge presentation experiments | [Omni-Wiki](https://github.com/Rejean-McCormick/Omni-Wiki) |
+| **SemantiK Architect** | Structured multilingual generation and language engineering | [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) · [SemantiK_Runtime_Orchestrator](https://github.com/Rejean-McCormick/SemantiK_Runtime_Orchestrator) · [LevelUpDiag_SemantiK_Architect](https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect) |
+| **SenTient** | Semantic interpretation and relation resolution | [SenTient](https://github.com/Rejean-McCormick/SenTient) |
 
-**Sources → Knowledge → Deliberation → Decision → Execution → Results → Lessons → Memory**
+## Learning, media and public diffusion
 
-or, more simply:
+| System | Function | Repositories / surfaces |
+|---|---|---|
+| **UCKK** | Learning, challenges, assemblies, archives, reporting and public diffusion | [UCKK](https://github.com/Rejean-McCormick/UCKK) · [UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets) · [UCKK-Ops-Console](https://github.com/Rejean-McCormick/UCKK-Ops-Console) · [uckk.org](https://uckk.org) |
+| **Médiathèque kOA** | Media/document curation, publication and content delivery | Current local implementations are tracked in the Kristal repository registry; public remote not yet indexed for the active implementation. |
 
-> **Know → Choose → Act → Remember → Know better**
+## Narrative, culture and communication
 
----
+| System | Function | Repositories |
+|---|---|---|
+| **King Klown** | Narrative / cultural mobilisation; not an implementation authority | [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) · [HELLO-WORLD-Autopsie-d-un-Clown-Royal](https://github.com/Rejean-McCormick/HELLO-WORLD-Autopsie-d-un-Clown-Royal) · [Omni-Wiki-Rejean-King-Klown](https://github.com/Rejean-McCormick/Omni-Wiki-Rejean-King-Klown) |
+| **Books / documentary corpus** | Long-form research and narrative material | [Book-Civilizational-Coherence](https://github.com/Rejean-McCormick/Book-Civilizational-Coherence) · [Book-Colin-Row](https://github.com/Rejean-McCormick/Book-Colin-Row) |
 
-## Expertise as public wealth
+## Physical infrastructure and deployment research
 
-One of the central premises of kOA is that **expertise is an underused form of collective wealth**.
+| System | Function | Repositories |
+|---|---|---|
+| **Kristal Farms** | Energy, compute, fibre, useful heat and resilient local infrastructure | [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) |
+| **Koali Scenario Mosaic** | Scenario atlas / system-use mapping | [Koali-Scenario-Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic) |
 
-Expertise exists among researchers, public servants, professionals, tradespeople, creators, community members, people with lived experience, students, specialists, and people whose competence has never been formally recognized.
+## Research, pressure-tests and experimental branches
 
-Some expertise is common. Some is rare. Some is certified. Some becomes visible only through repeated high-quality contributions.
+| Repository / family | Scope |
+|---|---|
+| [Power-Dynamics](https://github.com/Rejean-McCormick/Power-Dynamics) | Power, counterpower, routing, conversion and governance analysis. |
+| [Science-Silk-Road-Koali](https://github.com/Rejean-McCormick/Science-Silk-Road-Koali) | Research/diffusion bridge across scientific and institutional contexts. |
+| [Pi-Theory](https://github.com/Rejean-McCormick/Pi-Theory) | Independent speculative/research program; explicitly separate from MathChallenges. |
+| [Ame-Artificielle](https://github.com/Rejean-McCormick/Ame-Artificielle) | Experimental identity / soul-graph research with explicit safety separation. |
+| [Projet-ORPHEE-Walk-Straight](https://github.com/Rejean-McCormick/Projet-ORPHEE-Walk-Straight) | Applied learning / rehabilitation program research. |
+| [Partners-for-Public-Good-Pressure-Test-Koali](https://github.com/Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali) | Adversarial pressure-test and evidence discipline. |
+| [Konnaxion-Ashoka-Systems-Change-Dossier](https://github.com/Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier) | Systems-change fit dossier; support evidence, not runtime authority. |
+| [Freeze-Vote-Rebuild-Operational-Peace-Framework](https://github.com/Rejean-McCormick/Freeze-Vote-Rebuild-Operational-Peace-Framework) | Verification-first peace/reconstruction framework. |
+| [OurAI](https://github.com/Rejean-McCormick/OurAI) | AI-oriented experimental/support work. |
 
-A leader cannot be an expert in everything. A better system therefore does not attempt to manufacture omniscient leaders. It builds infrastructure capable of helping legitimate decision-makers identify relevant knowledge, find relevant competence, compare arguments and evidence, distinguish stronger signals from noise, preserve broad participation, make decisions, connect decisions to execution, and preserve what was learned.
+### MathChallenges stack
 
-Expertise should improve the quality of advice. It should not silently become political sovereignty.
+MathChallenges is **not Pi Theory**. The current local stack contains:
 
----
+- **Formulator** — research/calculation/validation/proof-generation engine around MathKristal.
+- **Kristal Grand Challenges** — persistent workbench and per-challenge Kristal research state.
+- **Kristal Math** — global mathematical corpus boundary; promotion is explicit rather than automatic.
 
-# The kOA Digital Ecosystem
-
-The **kOA Digital Ecosystem** is the digital sociotechnical infrastructure within the broader kOA initiative.
-
-Its purpose is to connect functions that are usually separated across organizations and software:
-
-- knowledge;
-- expertise;
-- deliberation;
-- decision;
-- execution;
-- evidence;
-- institutional memory.
-
-It is designed as a **system of systems**, not as one monolithic application. Each major component retains explicit authority over its own domain.
-
----
-
-## Koali / kOA-Linux
-
-**Koali is the operating environment and host authority of the Digital Ecosystem.**
-
-It provides the governable local foundation for identity, trust, policy, privileges, resources, component lifecycle, artifacts, releases, backup, recovery, rollback, deployment profiles, offline continuity and external integration boundaries.
-
-> **Critical local capability should not disappear merely because an external provider, network, cloud service or AI system becomes unavailable.**
-
-Repository: [**kOA-Linux-Koali**](https://github.com/Rejean-McCormick/kOA-Linux-Koali)
-
-Related: [Koali Spaces](https://github.com/Rejean-McCormick/Koali-Spaces) · [Koali Control Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel) · [LevelUpDiag-kOA-Linux](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux)
-
----
-
-## Konnaxion
-
-**Konnaxion is the civic, public and collaborative coordination layer.**
-
-It brings together public consultation, deliberation, collective knowledge, learning, research, innovation, culture, community coordination, team formation, expertise and Smart Vote.
-
-Repository: [**Konnaxion**](https://github.com/Rejean-McCormick/Konnaxion)  
-Public surface: [**konnaxion.com**](https://konnaxion.com)
-
-Related: [Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) · [Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) · [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) · [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag)
-
-### EkoH + Smart Vote
-
-EkoH and Smart Vote address a difficult problem:
-
-> **How can broad participation remain visible while stronger domain-relevant expertise is also allowed to emerge?**
-
-**EkoH** models signals of domain-specific competence, contribution quality and ethical credibility. Competence is contextual: someone can be highly competent in one domain without acquiring a universal social rank.
-
-**Smart Vote** preserves an ordinary participation baseline while allowing additional transparent readings informed by relevant competence and ethical credibility.
-
-The purpose is not to create an unquestionable expert class. It is to make stronger evidence, relevant expertise, disagreement, emerging competence and potentially higher-quality contributions more visible without erasing the public baseline.
+Their current local roots are registered in the Kristal ecosystem package; public remotes are not yet indexed there.
 
 ---
 
-## Orgo
+## Supporting language-engineering ecosystem
 
-**Orgo is the operational execution authority.**
+The MA-Gustave / GF engineering repositories are **supporting systems, not members of the kOA Digital Ecosystem**. Integration does not transfer authority.
 
-> **Signal → Case → Workflow → Task → Result → Evidence**
-
-Orgo turns decisions, signals and operational needs into structured work: cases, tasks, ownership, routing, roles, escalation, workflows, execution, review cycles and operational memory.
-
-Repository: [**Orgo**](https://github.com/Rejean-McCormick/Orgo)  
-Related: [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) · [LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo)
-
----
-
-## Kristal + Da'at
-
-**Kristal is structured knowledge infrastructure.**
-
-A knowledge artifact can preserve claims, sources, provenance, uncertainty, semantic relationships, validation state, authority, version history and canonical identity.
-
-The objective is to make knowledge portable, inspectable, reusable, auditable and machine-readable without becoming machine-controlled.
-
-Repository: [**Kristal-Framework**](https://github.com/Rejean-McCormick/Kristal-Framework)
-
-**Da'at** is the adaptation boundary between Kristal and the Interaction Kernel, preventing the transport protocol from becoming the authority that determines what knowledge means or whether it is valid.
+- [Ars-Magna-Lulli](https://github.com/MA-Gustave/Ars-Magna-Lulli) — repository
+- [GF_Observatory](https://github.com/MA-Gustave/GF_Observatory) — evidence observatory
+- [GF_RGL_AI_Compendium](https://github.com/MA-Gustave/GF_RGL_AI_Compendium) — language engineering compendium
+- [GF_Wordbench](https://github.com/MA-Gustave/GF_Wordbench) — repository
+- [Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit) — audit/tooling bridge
+- [Grammatical-Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian) — language resource
 
 ---
 
-## Interaction Kernel
+## Public repository directory
 
-The **Interaction Kernel** is a distributed interoperability protocol for autonomous systems.
+This is the linked public repository inventory currently recorded by the ecosystem registry. For local-only implementations and historical observations, use the canonical `repositories.json` in the kOA Digital Ecosystem package.
 
-It standardizes Commands, Queries, Events, Receipts, Query Results, artifact exchange, profiles, reliable delivery and reconciliation.
-
-The objective is to let systems cooperate **without giving one system direct ownership of another system's domain**.
-
-Repository: [**Interaction-Kernel**](https://github.com/Rejean-McCormick/Interaction-Kernel)
-
----
-
-# Building with AI without building authority into AI
-
-kOA is not designed around an AI sovereign.
-
-Its critical architecture favors deterministic, inspectable and governable behavior where authority matters.
-
-AI can assist with exploration, summarization, translation, writing, code, media, research, prototyping and candidate generation. But probabilistic output should not automatically become truth, policy, authorization, identity, canonical memory or political authority.
-
-> **Use AI where it accelerates. Preserve determinism where it protects.**
-
----
-
-# Offline continuity and sovereignty
-
-A critical digital system should not assume that the public Internet, a cloud provider or an external AI service will always remain available, affordable, trustworthy, uncensored, uncompromised or politically accessible.
-
-Koali therefore treats offline continuity as an architectural concern.
-
-This is **resilience through reduced dependency**, not a claim of invulnerability.
-
----
-
-# Independent instances, common protocols
-
-The architecture is intended to scale by composition:
-
-**one person → one team → one community → one school → one municipality → one university → one organization → one government → an international network**
-
-The objective is not to centralize everyone into a single kOA database.
-
-> **sovereign instances + common protocols + portable artifacts**
-
-Independent institutions can retain local governance while remaining interoperable.
-
----
-
-# Koali Scenario Mosaic
-
-The **Koali Scenario Mosaic** maps the architecture across a broad field of applications.
-
-**120 scenarios · 24 reusable patterns · 8 application families**
-
-The scenarios are architecture and use-case mappings; they should not be confused with 120 production deployments.
-
-Explore: [**Koali Scenario Mosaic**](https://koaliscenariomosaic.netlify.app/en/uses/)  
-Repository: [**Koali-Scenario-Mosaic**](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic)
-
----
-
-# UCKK
-
-**UCKK is the learning, media and public-diffusion branch of the broader kOA initiative.**
-
-Its current implementation is built on Moodle and extends it with structures for learning pathways, courses, challenges, assemblies, archives, integrity workflows, reporting, public knowledge diffusion and an advanced Mediatheque.
-
-UCKK can operate as a standalone learning environment. It is **not a required runtime dependency of the kOA Digital Ecosystem**.
-
-Repository: [**UCKK**](https://github.com/Rejean-McCormick/UCKK)  
-Public instance: [**uckk.org**](https://uckk.org)  
-Related: [**UCKK-Assets**](https://github.com/Rejean-McCormick/UCKK-Assets)
+| Repository | Boundary | Role |
+|---|---|---|
+| [Ame-Artificielle](https://github.com/Rejean-McCormick/Ame-Artificielle) | research-adjacent | primary |
+| [Book-Civilizational-Coherence](https://github.com/Rejean-McCormick/Book-Civilizational-Coherence) | kOA mapped | research book specification |
+| [Book-Colin-Row](https://github.com/Rejean-McCormick/Book-Colin-Row) | kOA mapped | narrative book repository |
+| [EncyKlopedia](https://github.com/Rejean-McCormick/EncyKlopedia) | kOA mapped | primary |
+| [Freeze-Vote-Rebuild-Operational-Peace-Framework](https://github.com/Rejean-McCormick/Freeze-Vote-Rebuild-Operational-Peace-Framework) | kOA mapped | peace framework |
+| [Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit) | kOA mapped | repository |
+| [Grammatical_Framework-Albanian](https://github.com/Rejean-McCormick/Grammatical-Framework-Albanian) | language support | language resource |
+| [HELLO-WORLD-Autopsie-d-un-Clown-Royal](https://github.com/Rejean-McCormick/HELLO-WORLD-Autopsie-d-un-Clown-Royal) | kOA mapped | narrative content project |
+| [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org) | kOA mapped | repository |
+| [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs) | kOA mapped | repository |
+| [interaction_kernel](https://github.com/Rejean-McCormick/Interaction-Kernel) | kOA mapped | primary reference implementation |
+| [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon) | kOA mapped | narrative canon |
+| [koa-linux](https://github.com/Rejean-McCormick/kOA-Linux-Koali) | kOA mapped | primary platform |
+| [kOA_Digital_Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem) | kOA mapped | canonical system map |
+| [Koali-Control-Panel](https://github.com/Rejean-McCormick/Koali-Control-Panel) | kOA mapped | development orchestration |
+| [koali-spaces](https://github.com/Rejean-McCormick/Koali-Spaces) | kOA mapped | presentation composition |
+| [Koali_Scenario_Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic) | kOA mapped | scenario atlas |
+| [Konductor](https://github.com/Rejean-McCormick/Konductor) | kOA mapped | repository |
+| [konfid](https://github.com/Rejean-McCormick/Konfid) | kOA mapped | security control plane |
+| [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion) | kOA mapped | primary |
+| [Konnaxion-Ashoka-Systems-Change-Dossier](https://github.com/Rejean-McCormick/Konnaxion-Ashoka-Systems-Change-Dossier) | kOA support | systems change dossier |
+| [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag) | kOA mapped | repository |
+| [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag) | kOA mapped | repository |
+| [Konnaxion_Capsule_Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager) | kOA mapped | deployment lifecycle manager |
+| [Konnaxion_Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds) | kOA mapped | world control plane |
+| [Konstellation](https://github.com/Rejean-McCormick/Konstellation) | kOA mapped | primary 1 0 rc |
+| [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms) | kOA mapped | primary |
+| [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework) | kOA mapped | repository |
+| [Kristal-Kollection](https://github.com/Rejean-McCormick/Kristal-Kollection) | kOA mapped | collection |
+| [Kristal-Reference](https://github.com/Rejean-McCormick/Kristal-Reference) | kOA mapped | repository |
+| [LevelUpDiag-Koali](https://github.com/Rejean-McCormick/LevelUpDiag-kOA-Linux) | kOA mapped | platform qualification |
+| [LevelUpDiag-Kristal](https://github.com/Rejean-McCormick/LevelUpDiag-Kristal) | kOA mapped | repository |
+| [LevelUpDiag-Orgo](https://github.com/Rejean-McCormick/LevelUpDiag-Orgo) | kOA mapped | orgo qualification |
+| [LevelUpDiag_SemantiK_Architect](https://github.com/Rejean-McCormick/LevelUpDiag_SemantiK-Architect) | kOA mapped | semantik qualification |
+| [MediKristal](https://github.com/Rejean-McCormick/MediKristal) | kOA mapped | repository |
+| [MediKristal-LevelUpDiag-](https://github.com/Rejean-McCormick/MediKristal-LevelUpDiag-) | kOA mapped | repository |
+| [Omni-Wiki](https://github.com/Rejean-McCormick/Omni-Wiki) | kOA mapped | repository |
+| [Omni-Wiki-Rejean-King-Klown](https://github.com/Rejean-McCormick/Omni-Wiki-Rejean-King-Klown) | kOA mapped | repository |
+| [Orgo](https://github.com/Rejean-McCormick/Orgo) | kOA mapped | primary |
+| [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds) | kOA mapped | repository |
+| [OurAI](https://github.com/Rejean-McCormick/OurAI) | kOA mapped | repository |
+| [Partners-for-Public-Good-Pressure-Test-Koali](https://github.com/Rejean-McCormick/Partners-for-Public-Good-Pressure-Test-Koali) | kOA support | pressure test |
+| [Pi-Theory](https://github.com/Rejean-McCormick/Pi-Theory) | research-adjacent | primary |
+| [Power-Dynamics](https://github.com/Rejean-McCormick/Power-Dynamics) | research | analytical framework |
+| [Projet-ORPHEE-Walk-Straight](https://github.com/Rejean-McCormick/Projet-ORPHEE-Walk-Straight) | research | applied learning program |
+| [Science-Silk-Road-Koali](https://github.com/Rejean-McCormick/Science-Silk-Road-Koali) | research | research dossier |
+| [SemantiK_Architect](https://github.com/Rejean-McCormick/SemantiK-Architect) | kOA mapped | primary |
+| [SemantiK_Runtime_Orchestrator](https://github.com/Rejean-McCormick/SemantiK_Runtime_Orchestrator) | kOA mapped | runtime release orchestrator |
+| [SenTient](https://github.com/Rejean-McCormick/SenTient) | kOA mapped | semantic resolution |
+| [UCKK](https://github.com/Rejean-McCormick/UCKK) | kOA mapped | repository |
+| [UCKK_Assets](https://github.com/Rejean-McCormick/UCKK-Assets) | kOA mapped | course assets |
+| [UCKK_ops_console](https://github.com/Rejean-McCormick/UCKK-Ops-Console) | kOA mapped | operations console |
+| [VotingMachine](https://github.com/Rejean-McCormick/VotingMachine) | research | primary |
 
 ---
 
-# King Klown
+## Current implementations without an indexed public remote
 
-**King Klown is the narrative and mobilisation layer of part of the kOA initiative and UCKK.**
+These are present in the current local repository/workspace evidence, but the Kristal registry does not currently contain a verified public Git URL for them. They are listed here without inventing links.
 
-King Klown is not a technical authority, a sovereign, a replacement for institutional governance, or a source of truth about implementation state.
-
-The character exists to attract attention, reveal systems, expose absurdities, ask uncomfortable questions, turn abstract ideas into memorable scenes, create challenges, transform attention into learning, and transform learning into action.
-
-Repository: [**King-Klown-Canon**](https://github.com/Rejean-McCormick/King-Klown-Canon)
-
-### Surreality
-
-> **Real problem → symbolic or fictional scene → possible resolution → return to reality**
-
-The fiction is not intended to replace factual truth. It is a method for making difficult or abstract systems understandable, memorable and culturally transmissible.
-
----
-
-# Kristal Farms
-
-**Kristal Farms is separate from the Kristal knowledge system.**
-
-It explores a physical infrastructure model connecting renewable energy, cold-climate compute, fibre, useful heat, resilient local infrastructure, community value and transferable expertise.
-
-> **Kristal Farms operates the infrastructure. The tenant controls the compute.**
-
-Repository: [**Kristal-Farms**](https://github.com/Rejean-McCormick/Kristal-Farms)
-
----
-
-# Language and semantic infrastructure
-
-## SemantiK Architect
-
-**SemantiK Architect** explores structured multilingual natural-language generation.
-
-Repository: [**SemantiK-Architect**](https://github.com/Rejean-McCormick/SemantiK-Architect)
-
-Related: [GF Zone Auditor](https://github.com/Rejean-McCormick/SemantiK-Architect-GF-Zone-Auditor) · [Grammatical-Framework-audit](https://github.com/Rejean-McCormick/Grammatical-Framework-audit)
-
-## SenTient
-
-**SenTient** explores structured semantic interpretation and reconciliation of language into entities and relations.
-
-Repository: [**SenTient**](https://github.com/Rejean-McCormick/SenTient)
+| Repository / project root | Boundary | Role |
+|---|---|---|
+| `-koa_mediatheque` | kOA mapped | parallel mediatheque implementation |
+| `Ariane` | kOA mapped | primary reference implementation |
+| `Ariane_Diagnostics` | kOA mapped | diagnostic suite |
+| `astro_app` | research-adjacent | quantitative astrology application |
+| `Business-plan` | kOA support | business strategy repository |
+| `Commons` | kOA support | partner fit dossier |
+| `editorial-figure-engine` | kOA mapped | deterministic figure tool |
+| `Formulator` | research | formal research orchestrator |
+| `International-Strategy` | kOA support | international strategy repository |
+| `Kamel` | kOA mapped | primary |
+| `KeyFlow(formulaires)` | kOA mapped | forms intake |
+| `Kompiler` | kOA mapped | context compiler |
+| `Konnaxion-Universe-Worlds-Manager` | kOA mapped | world seed manager |
+| `KonnaxionDiag` | kOA mapped | consolidated assurance suite |
+| `Konstellation_Publisher` | kOA mapped | deployment publisher |
+| `kor` | kOA mapped | mobile projection client |
+| `kristal-7` | kOA mapped | canonical standard repository |
+| `Kristal-Grand-Challenges` | research | math challenge research workbench |
+| `KristalDiag` | kOA mapped | conformance suite |
+| `LevelUpDiag` | kOA mapped | neutral diagnostics frame |
+| `levelupdiag_ariane` | kOA mapped | conformance diagnostic |
+| `mediatheque` | kOA mapped | primary implementation |
+| `RepoDiagSimdjson` | kOA support | generic repository diagnostics |
+| `SemantiK_Architect_GF_Source` | kOA support | language source |
+| `SemantiK_Phrase_Ops_Console` | kOA mapped | multilingual ops console |
+| `uckk-moodle` | kOA mapped | learning platform |
+| `UCKK_Publisher` | kOA mapped | deployment publisher |
+| `UCKK_SecurityDiag` | kOA mapped | security qualification |
+| `Voxtral_Audiobook_Studio` | adjacent | audiobook production tool |
 
 ---
 
-# Supporting language-engineering ecosystem
+## Public documentation and entry points
 
-The GF/RGL engineering systems under [MA-Gustave](https://github.com/MA-Gustave) are modeled as an **independent supporting ecosystem**, not as members of the kOA Digital Ecosystem. GF remains the external linguistic execution authority; GF RGL AI Compendium governs source-grounded engineering context, GF Wordbench produces validation evidence, Ars Magna Lulli orchestrates portfolio workflows, and GF Observatory projects maturity/readiness evidence.
-
-> **Support is not membership, and integration does not transfer authority.**
-
-
-# Public good, without economic lock-in
-
-The underlying software and knowledge infrastructure are intended to remain broadly inspectable and self-hostable.
-
-That does not prevent sustainable economic activity. Organizations can pay for deployment, hosting, integration, configuration, migration, maintenance, support, managed infrastructure, SLA, educational deployment, media migration and physical infrastructure.
-
-> **Pay for service, not permission.**
+- [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs) — public documentation
+- [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org) — website source
+- [initkoa.org](https://initkoa.org) — main public hub
+- [konnaxion.com](https://konnaxion.com) — Konnaxion public surface
+- [uckk.org](https://uckk.org) — UCKK public surface
+- [Koali Scenario Mosaic](https://koaliscenariomosaic.netlify.app/en/uses/) — scenario explorer
+- [kOA Reference Corpus](reference-corpus/README.md) — narrative architecture and authority guide
 
 ---
 
-# Current implementation state
+## Reading the map
 
-This profile deliberately does **not** duplicate maturity percentages, release numbers or temporary engineering status. Those change faster than this overview should.
+- **Mapped** means represented in the ecosystem map; it does not automatically mean production-active.
+- **Research / research-adjacent** means the repository informs experiments or models without being silently promoted to core authority.
+- **Supporting ecosystem** means useful and integrated where appropriate, but outside kOA membership and authority.
+- **Diagnostics / qualification** produce evidence about a system; they do not become the system they inspect.
+- **Repository identity does not transfer domain authority.** The repository that owns a claim, format or runtime boundary remains authoritative for that scope.
 
-For current status, qualification evidence and release information, follow the live status sources linked throughout the:
-
-➡️ [**kOA Reference Corpus**](reference-corpus/README.md)
-
----
-
-# Repository map
-
-## Core architecture
-- [kOA-Digital-Ecosystem](https://github.com/Rejean-McCormick/kOA-Digital-Ecosystem)
-- [kOA-Linux-Koali](https://github.com/Rejean-McCormick/kOA-Linux-Koali)
-- [Koali-Spaces](https://github.com/Rejean-McCormick/Koali-Spaces)
-- [Interaction-Kernel](https://github.com/Rejean-McCormick/Interaction-Kernel)
-
-## Civic and operational systems
-- [Konnaxion](https://github.com/Rejean-McCormick/Konnaxion)
-- [Konnaxion-Worlds](https://github.com/Rejean-McCormick/Konnaxion-Worlds)
-- [Konnaxion-Capsule-Manager](https://github.com/Rejean-McCormick/Konnaxion-Capsule-Manager)
-- [Konnaxion-SecurityDiag](https://github.com/Rejean-McCormick/Konnaxion-SecurityDiag)
-- [Konnaxion-LevelUpDiag](https://github.com/Rejean-McCormick/Konnaxion-LevelUpDiag)
-- [Orgo](https://github.com/Rejean-McCormick/Orgo)
-- [Orgo-Worlds](https://github.com/Rejean-McCormick/Orgo-Worlds)
-
-## Knowledge and semantics
-- [Kristal-Framework](https://github.com/Rejean-McCormick/Kristal-Framework)
-- [SemantiK-Architect](https://github.com/Rejean-McCormick/SemantiK-Architect)
-- [SenTient](https://github.com/Rejean-McCormick/SenTient)
-
-## Learning and public diffusion
-- [UCKK](https://github.com/Rejean-McCormick/UCKK)
-- [UCKK-Assets](https://github.com/Rejean-McCormick/UCKK-Assets)
-
-## Narrative and mobilisation
-- [King-Klown-Canon](https://github.com/Rejean-McCormick/King-Klown-Canon)
-
-## Physical infrastructure
-- [Kristal-Farms](https://github.com/Rejean-McCormick/Kristal-Farms)
-
-## Scenario mapping
-- [Koali-Scenario-Mosaic](https://github.com/Rejean-McCormick/Koali-Scenario-Mosaic)
-
-## Public documentation
-- [initkoa-docs](https://github.com/Rejean-McCormick/initkoa-docs)
-- [HomePage-initkoa.org](https://github.com/Rejean-McCormick/HomePage-initkoa.org)
-
----
-
-# Why this work exists
-
-The objective is not simply to build more software. It is to improve society's ability to **think and act together**.
-
-A functioning collective infrastructure should make it easier to find the right knowledge, hear the right expertise, preserve disagreement without drowning in noise, make decisions with visible reasons, connect decisions to real responsibility, execute, preserve evidence, learn, recognize contributors, and make future action better.
-
-> **A society should become more capable every time it solves a problem.**
-
----
-
-# Explore
-
-### Main hub
-[**initkoa.org**](https://initkoa.org)
-
-### Reference Corpus
-[**kOA Reference Corpus**](reference-corpus/README.md)
-
-### Public systems
-- [Konnaxion](https://konnaxion.com)
-- [UCKK](https://uckk.org)
-- [Koali Scenario Mosaic](https://koaliscenariomosaic.netlify.app/en/uses/)
-
-### Research and writing
-- [Medium](https://medium.com/@boatbuilder610)
-- [Google Scholar](https://scholar.google.com/citations?user=oVZ3n9kAAAAJ&hl=en)
-- [ORCID](https://orcid.org/0009-0001-2086-854X)
-- [PhilPeople](https://philpeople.org/profiles/rejean-mccormick)
-- [Amazon author page](https://www.amazon.ca/stores/author/B0G3B7DQWG?ingress=0)
-
-### Public presence
-- [LinkedIn](https://www.linkedin.com/in/r%C3%A9jean-mccormick-51403a37b/)
-- [YouTube](https://www.youtube.com/@KingKlown-XYZ/playlists)
-
----
-
-# Contact
-
-**Réjean McCormick**
-
-- Email: [rejean.mccormick@initkoa.org](mailto:rejean.mccormick@initkoa.org)
-- GitHub: [Rejean-McCormick](https://github.com/Rejean-McCormick)
-- Hub: [initkoa.org](https://initkoa.org)
-
----
-
-> **Know. Choose. Act. Remember. Know better.**
+> **Know → Choose → Act → Remember → Know better.**
